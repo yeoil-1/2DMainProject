@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Project_RobbyUI : UIBase
+public class LobbyUI : UIBase
 {
     [SerializeField] private DaniTechUIButton Button_Continue;
     [SerializeField] private DaniTechUIButton Button_GameStart;
