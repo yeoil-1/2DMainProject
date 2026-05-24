@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class LobbyUI : UIBase
+public class LobbyUI : DaniTechUIBase
 {
     [SerializeField] private DaniTechUIButton Button_Continue;
     [SerializeField] private DaniTechUIButton Button_GameStart;
@@ -25,12 +25,12 @@ public class LobbyUI : UIBase
 
     public void OnClick_GameStart()
     {
-
+        DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.CharacterSelectUI);
     }
 
     public void OnClick_GameQuit()
     {
-
+        DaniTechGameManager.Inst.SaveAndEndGame();
     }
 
     public void OnClick_GiveUp()
@@ -55,6 +55,6 @@ public class LobbyUI : UIBase
 
     public void OnClick_Encyclopedia()
     {
-
+        DaniTechUIManager.Instance.OpenPopupUI(DaniTechUIType.CharacterSelectUI);
     }
 }
