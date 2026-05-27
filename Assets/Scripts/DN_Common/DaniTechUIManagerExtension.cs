@@ -20,7 +20,9 @@ public enum DaniTechUIType
     DNDialogueUI,
     DNInfoBookUI,
     LobbyUI,
-    CharacterSelectUI
+    CharacterSelectUI,
+    Layout_Left,
+    Layout_Right
 }
 
 public static class DaniTechUIManagerExtension
