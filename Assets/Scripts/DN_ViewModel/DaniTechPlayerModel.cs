@@ -10,6 +10,14 @@ public class DaniTechItemModel
     public string ItemDataId;
     public int ItemStackCount;
 }
+[Serializable]
+public class ProjectCardModel
+{
+    public long CardUniqueId;
+    public string CardDataId;
+    public int CardUpgradeLevel;
+    public bool IsInDeck;
+}
 
 // 1) 플레이어 데이터를 만들어보자
 // 1-1) JsonUtility로 직렬화하려면, Mono를 상속받지 않도록 주의하자!
@@ -22,4 +30,13 @@ public class DaniTechPlayerModel
     public Vector3 LastMapPosition;
 
     public List<DaniTechItemModel> ItemList = new List<DaniTechItemModel>();
+}
+
+public class ProjectPlayerModel
+{
+    public string PlayerName;
+    public string LastMapDataId;
+    public Vector2 LastMapPosition;
+
+    public List<ProjectCardModel> CardList = new List<ProjectCardModel>();
 }

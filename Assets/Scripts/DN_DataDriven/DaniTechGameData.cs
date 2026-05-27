@@ -92,3 +92,16 @@ public class DNMonsterData : GameDataBase
     public string IconPath;
     public string PrefabPath;
 }
+
+[System.Serializable]
+
+public class CardData: GameDataBase
+{
+    public string Name;
+    public string Description;
+    public int Cost;
+    public string CardType;
+    public string TargetType;
+    public List<int> EffectValueList;
+    public string PrefabPath;
+}

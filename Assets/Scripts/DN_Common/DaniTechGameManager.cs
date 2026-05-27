@@ -4,9 +4,12 @@ using UnityEngine;
 public class DaniTechGameManager : MonoBehaviour
 {
     public static DaniTechGameManager Inst { get; set; }
+    
 
     // 플레이 중에 저장되어야 하는 정보들이 있는 위치
     private DaniTechPlayerModel _playerModel = new DaniTechPlayerModel();
+
+    private ProjectPlayerModel _projectPlayerModel = new ProjectPlayerModel();
 
     private void Awake()
     {
@@ -59,5 +62,27 @@ public class DaniTechGameManager : MonoBehaviour
     {
         // _playerModel이 Private이므로 외부에서 ItemList를 받아올 수 있게 Get함수를 사용한다
         return _playerModel.ItemList;
+    }
+    
+    
+    
+    
+    
+    
+    // 프로젝트용 리스트와 함수
+    public void AddCard(string cardDataId)
+    {
+        long uniqueId = DaniTechGameUtil.GenerateUniqueId();
+
+        var newCard = new ProjectCardModel();
+        newCard.CardUniqueId = uniqueId;
+
+    }
+    
+    
+    
+    public List<ProjectCardModel> GetPlayerCardList()
+    {
+        return _projectPlayerModel.CardList;
     }
 }
