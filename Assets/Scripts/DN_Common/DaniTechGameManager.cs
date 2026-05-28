@@ -76,7 +76,11 @@ public class DaniTechGameManager : MonoBehaviour
 
         var newCard = new ProjectCardModel();
         newCard.CardUniqueId = uniqueId;
+        newCard.CardDataId = cardDataId;
+        newCard.CardUpgradeLevel = 1;
+        newCard.IsInDeck = false;
 
+        _projectPlayerModel.CardList.Add(newCard);
     }
     
     
