@@ -95,13 +95,16 @@ public class DNMonsterData : GameDataBase
 
 [System.Serializable]
 
-public class CardData: GameDataBase
+public class ProjectCardData: GameDataBase
 {
     public string Name;
     public string Description;
     public int Cost;
-    public string CardType;
+    public string CardType;                // 공격, 스킬, 파워
+    public List<int> EffectValueList;      
+    public string Grade;                   // 시작, 일반, 고급, 희귀, 고대의존재, 멀티고급, 멀티희귀
+    public int UpgradedCost;
+    public List<int> UpgradedEffectValueList;
     public string TargetType;
-    public List<int> EffectValueList;
     public string PrefabPath;
 }

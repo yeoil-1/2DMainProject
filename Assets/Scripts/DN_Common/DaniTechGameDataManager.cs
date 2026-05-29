@@ -35,6 +35,7 @@ public class DaniTechGameDataManager : MonoBehaviour
     public Dictionary<string, DNDialogueData> DialogueDataList { get; private set; } = new Dictionary<string, DNDialogueData>();
     public Dictionary<string, DNFieldObjectData> FieldObjectDataList { get; private set; } = new Dictionary<string, DNFieldObjectData>();
     public Dictionary<string, DNMonsterData> MonsterDataList { get; private set; } = new Dictionary<string, DNMonsterData>();
+    public Dictionary<string, ProjectCardData> CardDataList { get; private set; } = new Dictionary<string, ProjectCardData>();
 
     private Dictionary<string, T> LoadData<T>(string tableName) where T : GameDataBase
     {
@@ -112,6 +113,11 @@ public class DaniTechGameDataManager : MonoBehaviour
         MonsterDataList = LoadData<DNMonsterData>("DNMonster");
     }
 
+    public void LoadProjectCardData(string jsonPath)
+    {
+        CardDataList = LoadData<ProjectCardData>(jsonPath);
+    }
+
 
     // [아래는 사용을 위한 부분들을 메서드 정의] =========================================================================================
     // Get과 Find이름을 꼭 구별 하자!
@@ -178,4 +184,12 @@ public class DaniTechGameDataManager : MonoBehaviour
 
         return FieldObjectDataList.TryGetValue(dataId, out var data) ? data : null;
     }
+
+    public ProjectCardData GetCardData(string dataId)
+    {
+        if (MonsterDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return CardDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
 }
