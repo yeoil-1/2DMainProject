@@ -108,3 +108,20 @@ public class ProjectCardData: GameDataBase
     public string TargetType;
     public string PrefabPath;
 }
+
+public class ProjectMonsterData : GameDataBase
+{
+    public string Name;
+    public string Description;
+    public string EnemyType;
+    public string SpawnZone;
+
+    public int MinHp;
+    public int MaxHp;
+    public int UpgradedMinHp;
+    public int UpgradedMaxHp;
+
+    public List<int> EffectValueList;
+    public List<int> UpgradedEffectValueList;
+    public string PrefabPath;
+}

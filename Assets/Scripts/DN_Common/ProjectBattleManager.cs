@@ -32,32 +32,31 @@ public class ProjectBattleManager : MonoBehaviour
         List<int> activeValues = isUpgradedCard ? cardData.UpgradedEffectValueList : cardData.EffectValueList;
 
         // 4. 내부 전용 판정 함수로 전달 (private 원칙)
-        ResolveCardEffect(cardData, activeValues, targetEnemyObj, targetInstanceId);
+        ResolveCardEffectByType(cardData, targetEnemyObj, targetInstanceId);
     }
 
-    private void ResolveCardEffect(ProjectCardData cardData, List<int> effectValues, GameObject targetObj, int targetInstanceId)
+    private void ResolveCardEffectByType(ProjectCardData cardData, GameObject targetObj, int targetInstanceId)
     {
-        // 테이블 스키마에 정의된 "공격", "스킬", "파워" 분류에 따라 분기 연산합니다.
         switch (cardData.CardType)
         {
             case "공격":
-                ApplyAttackCardEffect(cardData, effectValues, targetObj, targetInstanceId);
+                ApplyAttackCardEffect(cardData, targetObj, targetInstanceId);
                 break;
 
             case "스킬":
-                ApplySkillCardEffect(cardData, effectValues, targetObj);
+                ApplySkillCardEffect(cardData, targetObj);
                 break;
 
             case "파워":
-                ApplyPowerCardEffect(cardData, effectValues);
+                ApplyPowerCardEffect(cardData);
                 break;
 
             default:
-                Debug.LogWarning($"[Battle] 정해지지 않은 카드 타입 분류입니다: {cardData.CardType}");
+                Debug.LogWarning($"[Battle] 정의되지 않은 CardType 분류입니다: {cardData.CardType}");
                 break;
         }
     }
 
-    
+
 
 }

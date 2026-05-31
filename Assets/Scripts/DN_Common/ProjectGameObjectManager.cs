@@ -6,7 +6,7 @@ public class ProjectGameObjectManager : MonoBehaviour
 {
     [SerializeField] private Transform Root_Enemy;
 
-    public static DaniTechGameObjectManager Inst { get; set; }
+    public static ProjectGameObjectManager Inst { get; set; }
 
     // 생성된 오브젝트의 키가 됨
     private int _objectInstanceKeyGenerator = 0;
@@ -26,7 +26,7 @@ public class ProjectGameObjectManager : MonoBehaviour
     public async UniTaskVoid CreateEnemyObject(string monsterDataId, Transform spawnSpot)
     {
         // 1. [원본 활용] 데이터 매니저에서 기획자가 작성한 몬스터 테이블 데이터를 조회합니다.
-        DNMonsterData monsterData = DaniTechGameDataManager.Instance.GetDNMonsterData(monsterDataId);
+        ProjectMonsterData monsterData = DaniTechGameDataManager.Instance.GetProjectMonsterData(monsterDataId);
         if (monsterData == null)
         {
             Debug.LogError($"[GameObjectManager] {monsterDataId} 몬스터 스태틱 데이터가 존재하지 않습니다.");
@@ -63,19 +63,16 @@ public class ProjectGameObjectManager : MonoBehaviour
         Debug.Log($"키: {generatedInstanceId}의 몬스터 {monsterData.Name}이 데이터 기반으로 동적 생성되었습니다.");
     }
 
-    /// <summary>
-    /// 생성된 적 오브젝트에 실시간 인스턴스 ID와 스태틱 ID를 주입하여 데이터 드리븐 초기화를 수행합니다.
-    /// </summary>
+
     private void InitGeneratedEntityObject(int generatedId, string monsterDataId, GameObject gObj)
     {
-        DaniTech_2DEnemy gameEntity = gObj.GetComponent<DaniTech_2DEnemy>();
+        Project_2DEnemy gameEntity = gObj.GetComponent<Project_2DEnemy>();
         if (gameEntity == null)
         {
             Debug.LogWarning($"생성된 {gObj.name}의 InstanceId를 대입할 수 있는 컴포넌트를 가져올 수 없습니다!");
             return;
         }
 
-        // [데이터 드리븐 교정] 몬스터 컴포넌트가 스태틱 테이블 정보를 참조할 수 있도록 데이터를 함께 주입합니다.
         gameEntity.InitEnemyInfo(generatedId, monsterDataId);
     }
 
@@ -103,7 +100,6 @@ public class ProjectGameObjectManager : MonoBehaviour
     }
 
 
-    //[필드 오브젝트] ====================================================================================================
 
     public async UniTaskVoid CreateFieldObject(string fieldObjectDataId, Transform spawnSpot)
     {

@@ -16,7 +16,7 @@ public class Project_2DEnemy : MonoBehaviour
         InstanceId = generatedId;
         MonsterDataId = monsterDataId;
 
-        DNMonsterData staticMonsterData = DaniTechGameDataManager.Instance.GetDNMonsterData(monsterDataId);
+        ProjectMonsterData staticMonsterData = DaniTechGameDataManager.Instance.GetProjectMonsterData(monsterDataId);
 
         if (staticMonsterData == null)
         {
@@ -24,18 +24,14 @@ public class Project_2DEnemy : MonoBehaviour
             return;
         }
 
-        // 밸런스 데이터 연동 (예시: 엑셀 테이블에 명시된 기본 체력 스탯을 세팅)
-        // 만약 DNMonsterData에 Hp 필드가 없다면 기획 스키마에 맞춰 확장하여 사용합니다.
-        MaxHp = 100; // 기획서 데이터 기반 매핑 (ex: staticMonsterData.BaseHp)
+        MaxHp = staticMonsterData.MaxHp; 
         CurrentHp = MaxHp;
         IsDead = false;
 
         gameObject.name = $"{staticMonsterData.Name} (ID: {InstanceId})";
     }
 
-    /// <summary>
-    /// BattleManager가 카드의 최종 연산된 대미지를 전달하여 몬스터의 인스턴스 데이터를 수정하는 함수입니다.
-    /// </summary>
+
     public void TakeDamage(int damage)
     {
         if (IsDead == true) return;
@@ -48,7 +44,6 @@ public class Project_2DEnemy : MonoBehaviour
             Animator_Enemy.SetTrigger("OnHit");
         }
 
-        // 사망 판정 (스스로 Destroy하지 않고 상태값만 스위칭하여 매니저에게 알림)
         if (CurrentHp <= 0)
         {
             CurrentHp = 0;
