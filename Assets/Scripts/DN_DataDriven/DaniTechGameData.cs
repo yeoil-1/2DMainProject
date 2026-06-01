@@ -94,7 +94,6 @@ public class DNMonsterData : GameDataBase
 }
 
 [System.Serializable]
-
 public class ProjectCardData: GameDataBase
 {
     public string Name;
@@ -109,6 +108,7 @@ public class ProjectCardData: GameDataBase
     public string PrefabPath;
 }
 
+[System.Serializable]
 public class ProjectMonsterData : GameDataBase
 {
     public string Name;
@@ -125,3 +125,48 @@ public class ProjectMonsterData : GameDataBase
     public List<int> UpgradedEffectValueList;
     public string PrefabPath;
 }
+
+
+[System.Serializable]
+public class ProjectStatusData : GameDataBase
+{
+    public string Name;
+    public string Description;
+    public string EffectType;
+    public string IconPath;
+}
+
+[System.Serializable]
+public class RelicData
+{
+    public string Id;
+    public string Name;
+    public string Description;
+    public string SpawnCharacter;
+    public List<int> EffectValueList;
+}
+
+public class RuntimeRelicData
+{
+    public string Id;
+    public string Name;
+    public string Description;
+    public string SpawnCharacter;
+    public List<int> EffectValueList;
+
+    public int Counter;       // 턴을 카운팅할 변수
+    public bool IsActive;     // 아귀 저금통의 파괴 여부, 붉은 해골의 활성화 여부 제어
+
+    public RuntimeRelicData(RelicData data)
+    {
+        this.Id = data.Id;
+        this.Name = data.Name;
+        this.Description = data.Description;
+        this.SpawnCharacter = data.SpawnCharacter;
+        this.EffectValueList = new List<int>(data.EffectValueList);
+
+        this.Counter = 0;
+        this.IsActive = true;
+    }
+}
+

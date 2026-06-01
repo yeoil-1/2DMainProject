@@ -40,3 +40,11 @@ public class ProjectPlayerModel
 
     public List<ProjectCardModel> CardList = new List<ProjectCardModel>();
 }
+
+[Serializable]
+public class ProjectStatusInstanceModel
+{
+    public string StatusDataId { get; set; }
+    public int RemainTurn { get; set; }
+    public int EffectValue { get; set; }
+}

@@ -12,8 +12,7 @@ public class ProjectBattleManager : MonoBehaviour
 
     public void RequestResolveCard(ProjectCardModel cardModel, int targetInstanceId, bool isUpgradedCard = false)
     {
-        // 1. [원본 매핑] 제공해주신 데이터 테이블 명세에 맞춰 카드 스태틱 데이터를 가져옵니다.
-        // (GameDataManager에 등록된 카드 데이터 풀에서 인스턴스의 CardDataId로 조회)
+
         ProjectCardData cardData = DaniTechGameDataManager.Instance.GetCardData(cardModel.CardDataId);
         if (cardData == null)
         {
@@ -21,17 +20,14 @@ public class ProjectBattleManager : MonoBehaviour
             return;
         }
 
-        // 2. [원본 매핑] 제공해주신 오브젝트 매니저의 실시간 키 검사 및 객체 반환 함수 활용
         GameObject targetEnemyObj = DaniTechGameObjectManager.Inst.GetEntityObjectCanBeNull(targetInstanceId);
         if (targetEnemyObj == null)
         {
             return;
         }
 
-        // 3. 강화 여부에 따라 엑셀 테이블에 명시된 올바른 수치 리스트(EffectValueList vs UpgradedEffectValueList)를 추출합니다.
         List<int> activeValues = isUpgradedCard ? cardData.UpgradedEffectValueList : cardData.EffectValueList;
 
-        // 4. 내부 전용 판정 함수로 전달 (private 원칙)
         ResolveCardEffectByType(cardData, targetEnemyObj, targetInstanceId);
     }
 
@@ -57,6 +53,63 @@ public class ProjectBattleManager : MonoBehaviour
         }
     }
 
+    private void ApplyAttackCardEffect(ProjectCardData cardData, GameObject targetObj, int targetInstanceId)
+    {
+        Project_2DEnemy enemyComponent = targetObj.GetComponent<Project_2DEnemy>();
+        if (enemyComponent == null) return;
 
+        int finalDamage = 0;
+
+        if (cardData.Id == "card_breakthrough_01") // 정면 돌파: [0] 자해 체력, [1] 모든 적 피해량
+        {
+            int selfDamage = cardData.EffectValueList[0];
+            int enemyDamage = cardData.EffectValueList[1];
+
+            finalDamage = DaniTechGameUtil.CalcCharacterFinalDamage(curCharacterLevel: 1, levelPerDamage: enemyDamage, isCritical: false);
+        }
+        else if (cardData.Id == "card_bash_01" || cardData.Id == "card_thunderclap_01") // 강타, 천둥: [0] 피해량, [1] 디버프 수치
+        {
+            int targetDamage = cardData.EffectValueList[0];
+            int statusValue = cardData.EffectValueList[1];
+
+            finalDamage = DaniTechGameUtil.CalcCharacterFinalDamage(curCharacterLevel: 1, levelPerDamage: targetDamage, isCritical: false);
+            // 추후 statusValue(취약 등)를 타겟의 버프/디버프 모델에 주입하는 룰 연산 추가 구간
+        }
+        else // 일반적인 단일 공격 카드 (타격 등): [0] 피해량
+        {
+            int targetDamage = cardData.EffectValueList[0];
+            finalDamage = DaniTechGameUtil.CalcCharacterFinalDamage(curCharacterLevel: 1, levelPerDamage: targetDamage, isCritical: false);
+        }
+
+        enemyComponent.TakeDamage(finalDamage);
+
+        if (enemyComponent.IsDead == true)
+        {
+            DaniTechGameObjectManager.Inst.RequestDestroyEntityObject(targetInstanceId);
+        }
+    }
+
+    private void ApplySkillCardEffect(ProjectCardData cardData, GameObject targetObj)
+    {
+        if (cardData.Id == "card_bloodwall_01") // 피의 벽: [0] 자해 체력, [1] 획득 방어도
+        {
+            int hpLoss = cardData.EffectValueList[0];
+            int shieldValue = cardData.EffectValueList[1];
+
+            Debug.Log($"[Battle] {cardData.Name} 적용 완료. 체력 {hpLoss} 소모 / 방어도 {shieldValue} 획득");
+        }
+        else if (cardData.Id == "card_defend_01") // 수비: [0] 획득 방어도
+        {
+            int shieldValue = cardData.EffectValueList[0];
+
+            Debug.Log($"[Battle] {cardData.Name} 적용 완료. 방어도 {shieldValue} 획득");
+        }
+    }
+
+    private void ApplyPowerCardEffect(ProjectCardData cardData)
+    {
+
+        Debug.Log($"[Battle] 파워 카드 영구 룰 활성화: {cardData.Name}");
+    }
 
 }

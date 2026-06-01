@@ -8,10 +8,8 @@ public class ProjectGameObjectManager : MonoBehaviour
 
     public static ProjectGameObjectManager Inst { get; set; }
 
-    // 생성된 오브젝트의 키가 됨
     private int _objectInstanceKeyGenerator = 0;
 
-    // 생성된 오브젝트의 생명을 보관 (기존 자료구조 완벽 유지)
     private Dictionary<int, GameObject> _createdGameObjectContainer = new Dictionary<int, GameObject>();
     private Dictionary<int, DaniTech_2DFieldObject> _fieldObjectContainer = new Dictionary<int, DaniTech_2DFieldObject>();
 
@@ -20,12 +18,9 @@ public class ProjectGameObjectManager : MonoBehaviour
         Inst = this;
     }
 
-    /// <summary>
-    /// [데이터 드리븐 완벽 교정] 몬스터 데이터 ID를 받아 어드레서블 비동기로 적을 동적 생성합니다.
-    /// </summary>
+
     public async UniTaskVoid CreateEnemyObject(string monsterDataId, Transform spawnSpot)
     {
-        // 1. [원본 활용] 데이터 매니저에서 기획자가 작성한 몬스터 테이블 데이터를 조회합니다.
         ProjectMonsterData monsterData = DaniTechGameDataManager.Instance.GetProjectMonsterData(monsterDataId);
         if (monsterData == null)
         {
@@ -33,7 +28,6 @@ public class ProjectGameObjectManager : MonoBehaviour
             return;
         }
 
-        // 2. [원본 활용] 리소스 매니저를 통해 엑셀에 적힌 PrefabPath 경로로 비동기 인스턴스화를 진행합니다.
         GameObject gObj = await DaniTechResourceManager.Inst.InstantiateAsync(monsterData.PrefabPath, Root_Enemy, true);
         if (gObj == null)
         {
@@ -41,10 +35,8 @@ public class ProjectGameObjectManager : MonoBehaviour
             return;
         }
 
-        // 3. 위치 동적 세팅
         gObj.transform.position = spawnSpot.position;
 
-        // 4. 고유 Key 발급 및 컨테이너 보관 (기존 검증 로직 구조 유지)
         _objectInstanceKeyGenerator++;
         int generatedInstanceId = _objectInstanceKeyGenerator;
 
@@ -57,7 +49,6 @@ public class ProjectGameObjectManager : MonoBehaviour
 
         _createdGameObjectContainer.Add(generatedInstanceId, gObj);
 
-        // 5. 몬스터 정보 초기화 함수로 위임
         InitGeneratedEntityObject(generatedInstanceId, monsterDataId, gObj);
 
         Debug.Log($"키: {generatedInstanceId}의 몬스터 {monsterData.Name}이 데이터 기반으로 동적 생성되었습니다.");

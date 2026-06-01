@@ -31,6 +31,34 @@ public static class DaniTechGameUtil
         return finalDamage;
     }
 
+    public static int ProjectCalcCharacterFinalDamage(int levelPerDamage, List<ProjectStatusInstanceModel> statusList, bool isCritical)
+    {
+        int currentStrength = 0;
+
+        // 상태이상 리스트를 전수조사하여 '힘' 버프가 있다면 수치를 누적합니다.
+        if (statusList != null)
+        {
+            foreach (var status in statusList)
+            {
+                if (status.StatusDataId == "buff_strength")
+                {
+                    // 난도질 같은 카드에 의해 힘이 감소했을 상황(-)까지 고려하여 누적 계산
+                    currentStrength += status.EffectValue;
+                }
+            }
+        }
+
+        // 최종 피해량 = 카드의 원본 수치 + 동적으로 계산된 현재 힘 수치
+        int baseResult = levelPerDamage + currentStrength;
+
+        if (isCritical == true)
+        {
+            baseResult = Mathf.RoundToInt(baseResult * 1.5f);
+        }
+
+        return Mathf.Max(0, baseResult); // 대미지가 음수가 되는 방어 코드
+    }
+
     public static Sprite LoadSpriteCanBeNull(string spriteName)
     {
         // 1. Resources/ 경로에서 이름으로 스프라이트 로드
