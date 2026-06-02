@@ -4,6 +4,7 @@ using UnityEngine;
 public class ProjectBattleManager : MonoBehaviour
 {
     public static ProjectBattleManager Inst {  get; set; }
+    private Project_2DPlayer _playerCharacter;
 
     private void Awake()
     {

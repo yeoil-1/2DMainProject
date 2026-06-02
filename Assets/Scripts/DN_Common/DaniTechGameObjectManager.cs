@@ -147,5 +147,30 @@ public class DaniTechGameObjectManager : MonoBehaviour
         }
 
         return _fieldObjectContainer[fieldObjectInstanceId];
-    } 
+    }
+
+    public async UniTask<GameObject> CreatePlayerCharacterObject(string characterDataId, Transform spawnSpot)
+    {
+        // 1. 데이터 매니저에서 플레이어의 캐릭터 스태틱 데이터를 가져옵니다.
+        ProjectCharacterData charData = DaniTechGameDataManager.Instance.GetProjectCharacterData(characterDataId);
+
+        // 2. 리소스 매니저를 통해 엑셀에 적힌 PrefabPath(또는 규칙 경로)로 플레이어 실체를 생성합니다.
+        GameObject playerObj = await DaniTechResourceManager.Inst.InstantiateAsync("Prefabs/Player/Warrior", Root_Enemy, true);
+        playerObj.transform.position = spawnSpot.position;
+
+        // 3. 발급된 고유 인스턴스 ID(예: 플레이어는 항상 9999번으로 고정 등)를 부여하고 컴포넌트 초기화
+        int playerInstanceId = 9999;
+        _createdGameObjectContainer.Add(playerInstanceId, playerObj); // 컨테이너에 보관
+
+        // 4. 새롭게 구워진 오브젝트에 컴포넌트를 붙이거나 초기화합니다.
+        Project_2DPlayer playerComp = playerObj.GetComponent<Project_2DPlayer>();
+        if (playerComp != null)
+        {
+            //playerComp.InitProjectCharacterInfo(playerInstanceId);
+        }
+
+        return playerObj;
+    }
+
+
 }

@@ -38,6 +38,8 @@ public class DaniTechGameDataManager : MonoBehaviour
     
     public Dictionary<string, ProjectCardData> CardDataList { get; private set; } = new Dictionary<string, ProjectCardData>();
     public Dictionary<string, ProjectMonsterData> ProjectMonsterDataList { get; private set; } = new Dictionary<string, ProjectMonsterData>();
+    public Dictionary<string, ProjectCharacterData> ProjectCharacterDataList { get; private set; } = new Dictionary<string, ProjectCharacterData>();
+    public Dictionary<string, ProjectRelicData> ProjectRelicDataList { get; private set; } = new Dictionary<string, ProjectRelicData>();
 
 
     private Dictionary<string, T> LoadData<T>(string tableName) where T : GameDataBase
@@ -126,6 +128,15 @@ public class DaniTechGameDataManager : MonoBehaviour
         ProjectMonsterDataList = LoadData<ProjectMonsterData>(jsonPath);
     }
 
+    public void LoadProjectCharacterData(string jsonPath)
+    {
+        ProjectCharacterDataList = LoadData<ProjectCharacterData>(jsonPath);
+    }
+
+    public void LoadProjectRelicData(string jsonPath)
+    {
+        ProjectRelicDataList = LoadData<ProjectRelicData>(jsonPath);
+    }
 
     // [아래는 사용을 위한 부분들을 메서드 정의] =========================================================================================
     // Get과 Find이름을 꼭 구별 하자!
@@ -205,5 +216,19 @@ public class DaniTechGameDataManager : MonoBehaviour
         if (ProjectMonsterDataList == null || string.IsNullOrEmpty(dataId)) return null;
 
         return ProjectMonsterDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public ProjectCharacterData GetProjectCharacterData(string dataId)
+    {
+        if (ProjectCharacterDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return ProjectCharacterDataList.TryGetValue(dataId, out var data) ? data : null;
+    }
+
+    public ProjectRelicData GetProjectRelicData(string dataId)
+    {
+        if (ProjectRelicDataList == null || string.IsNullOrEmpty(dataId)) return null;
+
+        return ProjectRelicDataList.TryGetValue(dataId, out var data) ? data : null;
     }
 }

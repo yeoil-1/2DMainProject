@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class Project_2DEnemy : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Project_2DEnemy : MonoBehaviour
     public int MaxHp { get; private set; }
     public bool IsDead { get; private set; }
 
+    private List<ProjectStatusInstanceModel> _activeStatusList = new List<ProjectStatusInstanceModel>();
 
     public void InitEnemyInfo(int generatedId, string monsterDataId)
     {
@@ -29,6 +31,7 @@ public class Project_2DEnemy : MonoBehaviour
         IsDead = false;
 
         gameObject.name = $"{staticMonsterData.Name} (ID: {InstanceId})";
+        _activeStatusList.Clear();
     }
 
 

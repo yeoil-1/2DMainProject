@@ -21,7 +21,10 @@ public static class DaniTechGameUtil
         DaniTechGameDataManager.Instance.LoadDNItemData("DNItem");
         DaniTechGameDataManager.Instance.LoadDNDialogueData();
         DaniTechGameDataManager.Instance.LoadAll();
-        DaniTechGameDataManager.Instance.LoadProjectCardData("Card");
+        DaniTechGameDataManager.Instance.LoadProjectCardData("ProjectCard");
+        DaniTechGameDataManager.Instance.LoadProjectMonsterData("ProjectMonster");
+        DaniTechGameDataManager.Instance.LoadProjectCharacterData("ProjectCharacter");
+        DaniTechGameDataManager.Instance.LoadProjectRelicData("ProjectRelic");
     }
 
     public static int CalcCharacterFinalDamage(int curCharacterLevel, int levelPerDamage, bool isCritical)

@@ -137,18 +137,16 @@ public class ProjectStatusData : GameDataBase
 }
 
 [System.Serializable]
-public class RelicData
+public class ProjectRelicData : GameDataBase
 {
-    public string Id;
     public string Name;
     public string Description;
     public string SpawnCharacter;
     public List<int> EffectValueList;
 }
 
-public class RuntimeRelicData
+public class RuntimeRelicData : GameDataBase
 {
-    public string Id;
     public string Name;
     public string Description;
     public string SpawnCharacter;
@@ -157,7 +155,7 @@ public class RuntimeRelicData
     public int Counter;       // 턴을 카운팅할 변수
     public bool IsActive;     // 아귀 저금통의 파괴 여부, 붉은 해골의 활성화 여부 제어
 
-    public RuntimeRelicData(RelicData data)
+    public RuntimeRelicData(ProjectRelicData data)
     {
         this.Id = data.Id;
         this.Name = data.Name;
@@ -168,5 +166,20 @@ public class RuntimeRelicData
         this.Counter = 0;
         this.IsActive = true;
     }
+}
+
+[Serializable]
+public class ProjectCharacterData : GameDataBase
+{
+    public string Name;
+    public string Description;
+
+    public int MaxHp;
+    public int DamagedHp;
+
+    public string StartRelic;
+
+    public List<string> EffectValueList;
+    public List<string> UpgradedEffectValueList;
 }
 
