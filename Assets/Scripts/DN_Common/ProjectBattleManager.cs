@@ -4,14 +4,30 @@ using UnityEngine;
 public class ProjectBattleManager : MonoBehaviour
 {
     public static ProjectBattleManager Inst {  get; set; }
-    private Project_2DPlayer _playerCharacter;
+    [SerializeField] private Project_BattlePlayer Player_Main;
 
     private void Awake()
     {
         Inst = this;
     }
 
-    public void RequestResolveCard(ProjectCardModel cardModel, int targetInstanceId, bool isUpgradedCard = false)
+    private void Start()
+    {
+        // 1. 전투가 시작되면 씬에 배치된 플레이어 객체를 오브젝트 매니저에 등록
+        if (Player_Main != null)
+        {
+            DaniTechGameObjectManager.Inst.RegisterBattlePlayer(Player_Main);
+
+            // 플레이어 자체의 스태틱 데이터 초기화 (예: 캐릭터ID "CH_001", 체력 100)
+            Player_Main.InitBattlePlayer("CH_001", 100);
+        }
+
+        // 2. 적 스폰 요청 (기존에 만들어두신 몬스터 생성 로직 호출)
+        // 이 함수가 실행되면서 내부적으로 고유 ID(2, 3, 4...)가 발급되며 몬스터가 셋업됩니다.
+        DaniTechGameObjectManager.Inst.RequestSpawnEnemy();
+    }
+
+    public void RequestPlayCard(ProjectCardModel cardModel, int targetInstanceId, bool isUpgradedCard = false)
     {
 
         ProjectCardData cardData = DaniTechGameDataManager.Instance.GetCardData(cardModel.CardDataId);
@@ -29,23 +45,23 @@ public class ProjectBattleManager : MonoBehaviour
 
         List<int> activeValues = isUpgradedCard ? cardData.UpgradedEffectValueList : cardData.EffectValueList;
 
-        ResolveCardEffectByType(cardData, targetEnemyObj, targetInstanceId);
+        PlayCardEffectByType(cardData, targetEnemyObj, targetInstanceId);
     }
 
-    private void ResolveCardEffectByType(ProjectCardData cardData, GameObject targetObj, int targetInstanceId)
+    private void PlayCardEffectByType(ProjectCardData cardData, GameObject targetObj, int targetInstanceId)
     {
         switch (cardData.CardType)
         {
             case "공격":
-                ApplyAttackCardEffect(cardData, targetObj, targetInstanceId);
+                RequestAttackCardEffect(cardData, targetObj, targetInstanceId);
                 break;
 
             case "스킬":
-                ApplySkillCardEffect(cardData, targetObj);
+                RequestSkillCardEffect(cardData, targetObj);
                 break;
 
             case "파워":
-                ApplyPowerCardEffect(cardData);
+                RequestPowerCardEffect(cardData);
                 break;
 
             default:
@@ -54,7 +70,7 @@ public class ProjectBattleManager : MonoBehaviour
         }
     }
 
-    private void ApplyAttackCardEffect(ProjectCardData cardData, GameObject targetObj, int targetInstanceId)
+    private void RequestAttackCardEffect(ProjectCardData cardData, GameObject targetObj, int targetInstanceId)
     {
         Project_2DEnemy enemyComponent = targetObj.GetComponent<Project_2DEnemy>();
         if (enemyComponent == null) return;
@@ -90,7 +106,7 @@ public class ProjectBattleManager : MonoBehaviour
         }
     }
 
-    private void ApplySkillCardEffect(ProjectCardData cardData, GameObject targetObj)
+    private void RequestSkillCardEffect(ProjectCardData cardData, GameObject targetObj)
     {
         if (cardData.Id == "card_bloodwall_01") // 피의 벽: [0] 자해 체력, [1] 획득 방어도
         {
@@ -107,7 +123,7 @@ public class ProjectBattleManager : MonoBehaviour
         }
     }
 
-    private void ApplyPowerCardEffect(ProjectCardData cardData)
+    private void RequestPowerCardEffect(ProjectCardData cardData)
     {
 
         Debug.Log($"[Battle] 파워 카드 영구 룰 활성화: {cardData.Name}");

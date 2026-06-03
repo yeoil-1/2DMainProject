@@ -24,7 +24,7 @@ public class ProjectStatusEffectInstance
 }
 
 
-public class Project_2DPlayer : MonoBehaviour
+public class Project_BattlePlayer : MonoBehaviour
 {
     [SerializeField] private Text Text_CharacterName;
     [SerializeField] private Text Text_HpDisplay;
@@ -35,6 +35,8 @@ public class Project_2DPlayer : MonoBehaviour
     private int _currentHp;
     private int _maxHp;
     private int _currentMana;
+
+    private int _instanceId;
 
     // 기획 스태틱 데이터 참조
     private ProjectCharacterData _characterStaticData;
@@ -48,6 +50,12 @@ public class Project_2DPlayer : MonoBehaviour
     {
         get => _currentHp;
         private set => _currentHp = value;
+    }
+
+    public int InstanceId
+    {
+        get => _instanceId;
+        private set => _instanceId = value;
     }
 
     // [기수 규칙] 함수는 동사로 시작할 것
@@ -68,6 +76,11 @@ public class Project_2DPlayer : MonoBehaviour
         _activeEffects.Clear();
 
         RefreshPlayerUI();
+    }
+
+    public void InitPlayerInstanceInfo(int generatedId)
+    {
+        InstanceId = generatedId;
     }
 
     public void TakeDamage(int damage)

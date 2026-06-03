@@ -13,6 +13,13 @@ public class DaniTechGameObjectManager : MonoBehaviour
     // 생성된 오브젝트의 키가 됨
     private int _objectInstanceKeyGenerator = 0;
 
+    private Project_BattlePlayer _battlePlayerTarget;
+    public Project_BattlePlayer BattlePlayerTarget
+    {
+        get => _battlePlayerTarget;
+        private set => _battlePlayerTarget = value;
+    }
+
     // 생성된 오브젝트의 생명을 보관
     private Dictionary<int, GameObject> _createdGameObjectContainer = new Dictionary<int, GameObject>();
     private Dictionary<int, DaniTech_2DFieldObject> _fieldObjectContainer = new Dictionary<int, DaniTech_2DFieldObject>();
@@ -149,27 +156,22 @@ public class DaniTechGameObjectManager : MonoBehaviour
         return _fieldObjectContainer[fieldObjectInstanceId];
     }
 
-    public async UniTask<GameObject> CreatePlayerCharacterObject(string characterDataId, Transform spawnSpot)
+    public void RegisterBattlePlayer(Project_BattlePlayer player)
     {
-        // 1. 데이터 매니저에서 플레이어의 캐릭터 스태틱 데이터를 가져옵니다.
-        ProjectCharacterData charData = DaniTechGameDataManager.Instance.GetProjectCharacterData(characterDataId);
+        if (player == null) return;
 
-        // 2. 리소스 매니저를 통해 엑셀에 적힌 PrefabPath(또는 규칙 경로)로 플레이어 실체를 생성합니다.
-        GameObject playerObj = await DaniTechResourceManager.Inst.InstantiateAsync("Prefabs/Player/Warrior", Root_Enemy, true);
-        playerObj.transform.position = spawnSpot.position;
+        // 플레이어의 고유 인스턴스 ID를 1번으로 강제 지정하여 초기화
+        int playerFixedId = 1;
+        player.InitPlayerInstanceInfo(playerFixedId);
 
-        // 3. 발급된 고유 인스턴스 ID(예: 플레이어는 항상 9999번으로 고정 등)를 부여하고 컴포넌트 초기화
-        int playerInstanceId = 9999;
-        _createdGameObjectContainer.Add(playerInstanceId, playerObj); // 컨테이너에 보관
+        _battlePlayerTarget = player;
 
-        // 4. 새롭게 구워진 오브젝트에 컴포넌트를 붙이거나 초기화합니다.
-        Project_2DPlayer playerComp = playerObj.GetComponent<Project_2DPlayer>();
-        if (playerComp != null)
+        // 기존의 전체 오브젝트 관리 딕셔너리에도 함께 보관 (타겟팅 공통 처리를 위함)
+        if (_createdGameObjectContainer.ContainsKey(playerFixedId) == false)
         {
-            //playerComp.InitProjectCharacterInfo(playerInstanceId);
+            _createdGameObjectContainer.Add(playerFixedId, player.gameObject);
+            Debug.Log($"[GameObjectManager] 플레이어가 인스턴스 ID {playerFixedId}번으로 등록되었습니다.");
         }
-
-        return playerObj;
     }
 
 
