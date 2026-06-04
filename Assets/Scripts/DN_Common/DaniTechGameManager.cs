@@ -60,7 +60,6 @@ public class DaniTechGameManager : MonoBehaviour
 
     public List<DaniTechItemModel> GetPlayerItemList()
     {
-        // _playerModel이 Private이므로 외부에서 ItemList를 받아올 수 있게 Get함수를 사용한다
         return _playerModel.ItemList;
     }
     
@@ -77,7 +76,6 @@ public class DaniTechGameManager : MonoBehaviour
         var newCard = new ProjectCardModel();
         newCard.CardUniqueId = uniqueId;
         newCard.CardDataId = cardDataId;
-        newCard.CardLevel = 1;
         newCard.IsInDeck = false;
 
         _projectPlayerModel.CardList.Add(newCard);
@@ -89,4 +87,6 @@ public class DaniTechGameManager : MonoBehaviour
     {
         return _projectPlayerModel.CardList;
     }
+
+
 }

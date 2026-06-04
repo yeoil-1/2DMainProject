@@ -30,7 +30,8 @@
       0,
       0,
       1
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_fuzzy_01",
@@ -57,7 +58,8 @@
       0,
       0,
       7
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_nibbit_01",
@@ -90,7 +92,8 @@
       0,
       0,
       2
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_flyconid_01",
@@ -123,7 +126,8 @@
       0,
       0,
       2
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_leafslime_m",
@@ -150,7 +154,8 @@
       0,
       0,
       2
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_twigslime_m",
@@ -177,7 +182,8 @@
       0,
       0,
       1
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_inklet_01",
@@ -216,7 +222,8 @@
       0,
       0,
       1
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_strangler_01",
@@ -249,7 +256,8 @@
       0,
       0,
       3
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_vine_01",
@@ -282,7 +290,8 @@
       18,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_mawler_01",
@@ -315,7 +324,8 @@
       0,
       0,
       3
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_jaxfruit_01",
@@ -336,7 +346,8 @@
       4,
       1,
       2
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_fogmog_01",
@@ -363,7 +374,8 @@
       16,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_cubex_01",
@@ -396,7 +408,8 @@
       0,
       0,
       15
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_brute_01",
@@ -423,7 +436,8 @@
       0,
       0,
       3
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_tracker_01",
@@ -450,7 +464,8 @@
       0,
       0,
       2
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_sludge_01",
@@ -483,7 +498,8 @@
       7,
       1,
       3
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_seapunk_01",
@@ -516,7 +532,8 @@
       0,
       0,
       8
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_corpseslug_01",
@@ -555,7 +572,8 @@
       0,
       0,
       5
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_toadpole_01",
@@ -588,7 +606,8 @@
       0,
       0,
       2
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_calcified_01",
@@ -615,7 +634,8 @@
       11,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_dampcultist_01",
@@ -642,7 +662,8 @@
       3,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_fossil_01",
@@ -681,7 +702,8 @@
       0,
       0,
       3
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_mercenary_01",
@@ -720,7 +742,8 @@
       0,
       0,
       20
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_hauntedship_01",
@@ -759,7 +782,8 @@
       5,
       3,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_livingfog_01",
@@ -786,7 +810,8 @@
       9,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_punch_01",
@@ -819,7 +844,8 @@
       6,
       2,
       1
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_sewerclam_01",
@@ -852,7 +878,8 @@
       0,
       0,
       9
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_twotailrat_01",
@@ -885,7 +912,8 @@
       0,
       0,
       1
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_tunneler_01",
@@ -918,7 +946,8 @@
       26,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_hopper_01",
@@ -957,7 +986,8 @@
       16,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_exoskeleton_01",
@@ -996,7 +1026,8 @@
       0,
       0,
       9
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_bowlrock_01",
@@ -1017,7 +1048,8 @@
       16,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_bowltheegg_01",
@@ -1038,7 +1070,8 @@
       8,
       1,
       8
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_bowlnectar_01",
@@ -1065,7 +1098,8 @@
       0,
       0,
       16
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_bowlsilk_01",
@@ -1092,7 +1126,8 @@
       5,
       2,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_progenitor_01",
@@ -1125,7 +1160,8 @@
       16,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_chomper_01",
@@ -1152,7 +1188,8 @@
       0,
       0,
       3
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_hunter_01",
@@ -1185,7 +1222,8 @@
       0,
       0,
       1
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_myte_01",
@@ -1218,7 +1256,8 @@
       0,
       0,
       2
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_slumbering_01",
@@ -1251,7 +1290,8 @@
       0,
       0,
       3
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_ovicopter_01",
@@ -1284,7 +1324,8 @@
       0,
       0,
       4
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_spinytoad_01",
@@ -1317,7 +1358,8 @@
       19,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_obscura_01",
@@ -1350,7 +1392,8 @@
       0,
       0,
       3
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_parafright_01",
@@ -1371,7 +1414,8 @@
       17,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_scroll_01",
@@ -1410,7 +1454,8 @@
       0,
       0,
       2
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_sculptor_01",
@@ -1437,7 +1482,8 @@
       15,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_shield_01",
@@ -1470,7 +1516,8 @@
       0,
       0,
       25
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_turret_01",
@@ -1497,7 +1544,8 @@
       0,
       0,
       1
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_globehead_01",
@@ -1536,7 +1584,8 @@
       0,
       0,
       6
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_axebot_01",
@@ -1569,7 +1618,8 @@
       10,
       1,
       1
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_frogknight_01",
@@ -1608,7 +1658,8 @@
       0,
       0,
       19
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_berserker_01",
@@ -1641,7 +1692,8 @@
       33,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_magistrate_01",
@@ -1674,7 +1726,8 @@
       36,
       1,
       4
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_thelost_01",
@@ -1701,7 +1754,8 @@
       5,
       2,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_theforgotten_01",
@@ -1728,7 +1782,8 @@
       17,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_fabricator_01",
@@ -1755,7 +1810,8 @@
       13,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_stabbot_01",
@@ -1776,7 +1832,8 @@
       12,
       1,
       1
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_zapbot_01",
@@ -1797,7 +1854,8 @@
       16,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_parasite_01",
@@ -1824,7 +1882,8 @@
       5,
       4,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_wriggler_01",
@@ -1851,7 +1910,8 @@
       0,
       0,
       2
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_effigy_01",
@@ -1878,7 +1938,8 @@
       15,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_byrdonis_01",
@@ -1911,7 +1972,8 @@
       0,
       0,
       1
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_terroreel_01",
@@ -1938,7 +2000,8 @@
       4,
       3,
       6
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_colony_01",
@@ -1983,7 +2046,8 @@
       0,
       0,
       15
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_gardener_01",
@@ -2028,7 +2092,8 @@
       0,
       0,
       7
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_prism_01",
@@ -2067,7 +2132,8 @@
       0,
       0,
       22
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_decimillipede_01",
@@ -2100,7 +2166,8 @@
       9,
       1,
       1
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_entomancer_01",
@@ -2139,7 +2206,8 @@
       0,
       0,
       1
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_mechaknight_01",
@@ -2178,7 +2246,8 @@
       40,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_flailknight_01",
@@ -2211,7 +2280,8 @@
       10,
       2,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_spectralknight_01",
@@ -2238,7 +2308,8 @@
       4,
       3,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_magiknight_01",
@@ -2271,7 +2342,8 @@
       40,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_soulnexus_01",
@@ -2304,7 +2376,8 @@
       19,
       1,
       2
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_vantom_01",
@@ -2349,7 +2422,8 @@
       0,
       0,
       9
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_kinfollower_01",
@@ -2382,7 +2456,8 @@
       5,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_kinpriest_01",
@@ -2421,7 +2496,8 @@
       0,
       0,
       3
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_ceremonial_01",
@@ -2460,7 +2536,8 @@
       19,
       1,
       4
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_soulfysh_01",
@@ -2493,7 +2570,8 @@
       12,
       1,
       3
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_waterfall_01",
@@ -2538,7 +2616,8 @@
       0,
       0,
       15
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_lagavulin_01",
@@ -2577,7 +2656,8 @@
       0,
       0,
       -2
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_knowledge_01",
@@ -2610,7 +2690,8 @@
       13,
       1,
       3
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_insatiable_01",
@@ -2649,7 +2730,8 @@
       0,
       0,
       3
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_crusher_01",
@@ -2682,7 +2764,8 @@
       14,
       1,
       18
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_rocket_01",
@@ -2715,7 +2798,8 @@
       0,
       0,
       6
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_testsubject_01",
@@ -2754,7 +2838,8 @@
       11,
       3,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_queen_01",
@@ -2787,7 +2872,8 @@
       18,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   },
   {
     "Id": "enemy_torchhead_01",
@@ -2820,6 +2906,7 @@
       15,
       1,
       0
-    ]
+    ],
+    "PrefabPath": null
   }
 ]

@@ -1149,7 +1149,7 @@ GameObject:
   - component: {fileID: 793256765}
   - component: {fileID: 793256766}
   m_Layer: 0
-  m_Name: ProjectDeckManager
+  m_Name: ProjectCardManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1182,6 +1182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55465e056d8ce3544bba403d231c6c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectDeckManager
+  Prefab_CardVisual: {fileID: 0}
+  Transform_HandRoot: {fileID: 0}
 --- !u!1 &819366488
 GameObject:
   m_ObjectHideFlags: 0
@@ -3589,6 +3591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9a9882a6305f5b4ca0260db1e3877ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectBattleManager
+  Player_Main: {fileID: 0}
 --- !u!1 &2000839488
 GameObject:
   m_ObjectHideFlags: 0
@@ -3732,6 +3735,50 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7320474187140132611, guid: 74c25cb5a26ddae40b71a15a1f013660, type: 3}
   m_PrefabInstance: {fileID: 3185085209769491824}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2062369737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2062369738}
+  - component: {fileID: 2062369739}
+  m_Layer: 0
+  m_Name: ProjectTurnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2062369738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062369737}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1861007716123303291}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2062369739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062369737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7912ccc9dc1987c48805b0d634915177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DaniTechTurnManager
 --- !u!1 &2095039693
 GameObject:
   m_ObjectHideFlags: 0
@@ -3948,6 +3995,7 @@ Transform:
   - {fileID: 2323124735420036915}
   - {fileID: 793256765}
   - {fileID: 1976918742}
+  - {fileID: 2062369738}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2077730040239709779

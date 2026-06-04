@@ -130,6 +130,7 @@ public class DaniTechGameDataManager : MonoBehaviour
 
     public void LoadProjectCharacterData(string jsonPath)
     {
+        Debug.Log(jsonPath);
         ProjectCharacterDataList = LoadData<ProjectCharacterData>(jsonPath);
     }
 
@@ -204,7 +205,7 @@ public class DaniTechGameDataManager : MonoBehaviour
         return FieldObjectDataList.TryGetValue(dataId, out var data) ? data : null;
     }
 
-    public ProjectCardData GetCardData(string dataId)
+    public ProjectCardData GetProjectCardData(string dataId)
     {
         if (CardDataList == null || string.IsNullOrEmpty(dataId)) return null;
 

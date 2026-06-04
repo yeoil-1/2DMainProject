@@ -30,7 +30,7 @@ public class ProjectBattleManager : MonoBehaviour
     public void RequestPlayCard(ProjectCardModel cardModel, int targetInstanceId, bool isUpgradedCard = false)
     {
 
-        ProjectCardData cardData = DaniTechGameDataManager.Instance.GetCardData(cardModel.CardDataId);
+        ProjectCardData cardData = DaniTechGameDataManager.Instance.GetProjectCardData(cardModel.CardDataId);
         if (cardData == null)
         {
             Debug.LogWarning($"[Battle] {cardModel.CardDataId}에 해당하는 카드 명세를 테이블에서 찾을 수 없습니다.");

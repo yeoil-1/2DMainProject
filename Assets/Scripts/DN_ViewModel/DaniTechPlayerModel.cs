@@ -15,7 +15,6 @@ public class ProjectCardModel
 {
     public long CardUniqueId;
     public string CardDataId;
-    public int CardLevel;
     public bool IsInDeck;
 }
 

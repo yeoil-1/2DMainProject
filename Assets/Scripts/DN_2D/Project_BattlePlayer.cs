@@ -31,21 +31,18 @@ public class Project_BattlePlayer : MonoBehaviour
     [SerializeField] private Text Text_ManaDisplay;
     [SerializeField] private Text Text_StatusEffectDisplay; // 버프/디버프 통합 출력 UI
 
-    // [기수 규칙] 멤버 변수는 _aaa 이고 소문자로 시작
     private int _currentHp;
     private int _maxHp;
     private int _currentMana;
 
     private int _instanceId;
 
-    // 기획 스태틱 데이터 참조
     private ProjectCharacterData _characterStaticData;
 
     // 현재 플레이어에게 적용된 모든 상태 효과(버프/디버프) 컨테이너
     private Dictionary<ProjectStatusEffectType, ProjectStatusEffectInstance> _activeEffects =
         new Dictionary<ProjectStatusEffectType, ProjectStatusEffectInstance>();
 
-    // [기수 규칙] 외부 객체가 참조할 수 있도록 프로퍼티로 개방
     public int CurrentHp
     {
         get => _currentHp;
@@ -58,7 +55,6 @@ public class Project_BattlePlayer : MonoBehaviour
         private set => _instanceId = value;
     }
 
-    // [기수 규칙] 함수는 동사로 시작할 것
     public void InitBattlePlayer(string characterDataId, int maxHp)
     {
         _characterStaticData = DaniTechGameDataManager.Instance.GetProjectCharacterData(characterDataId);
@@ -172,7 +168,6 @@ public class Project_BattlePlayer : MonoBehaviour
         return 0;
     }
 
-    // [기수 규칙] 클래스 내부에서만 사용하는 헬퍼 메서드는 private 원칙
     private void CheckAndRemoveExpiredEffect(ProjectStatusEffectType type)
     {
         if (_activeEffects.TryGetValue(type, out var effect))

@@ -1,0 +1,1803 @@
+[
+  {
+    "Id": "relic_burningblood_01",
+    "Name": "불타는 혈액",
+    "Description": "매 전투 종료 시 체력을 6 회복합니다.",
+    "SpawnCharacter": "시작_아이언클래드",
+    "EffectValueList": [
+      6
+    ]
+  },
+  {
+    "Id": "relic_ringsnake_01",
+    "Name": "뱀의 반지",
+    "Description": "매 전투 시작 시 카드를 추가로 2장 뽑습니다.",
+    "SpawnCharacter": "시작_사일런트",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_divineright_01",
+    "Name": "신성한 권리",
+    "Description": "매 전투 시작 시 별 자원을 획득합니다.",
+    "SpawnCharacter": "시작_리젠트",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_boundphylactery_01",
+    "Name": "구속된 성물함",
+    "Description": "내 턴 시작 시 소환 1을 얻습니다.",
+    "SpawnCharacter": "시작_네크로바인더",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_crackedcore_01",
+    "Name": "부서진 핵",
+    "Description": "매 전투 시작 시 전기를 1번 영창합니다.",
+    "SpawnCharacter": "시작_디펙트",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_blackblood_01",
+    "Name": "어두운 피",
+    "Description": "매 전투 종료 시 체력을 12 회복합니다. (대체 유물)",
+    "SpawnCharacter": "강화시작_아이언클래드",
+    "EffectValueList": [
+      12
+    ]
+  },
+  {
+    "Id": "relic_ringdrake_01",
+    "Name": "비룡의 반지",
+    "Description": "첫 3턴 시작 시 카드를 추가로 2장 뽑습니다. (대체 유물)",
+    "SpawnCharacter": "강화시작_사일런트",
+    "EffectValueList": [
+      3,
+      2
+    ]
+  },
+  {
+    "Id": "relic_divinedestiny_01",
+    "Name": "신성한 운명",
+    "Description": "매 전투 시작 시 별 자원을 얻습니다. (대체 유물)",
+    "SpawnCharacter": "강화시작_리젠트",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_phylacteryunbound_01",
+    "Name": "해방된 성물함",
+    "Description": "전투 시작 시 소환 5, 턴 시작 시 소환 2를 얻습니다. (대체 유물)",
+    "SpawnCharacter": "강화시작_네크로바인더",
+    "EffectValueList": [
+      5,
+      2
+    ]
+  },
+  {
+    "Id": "relic_infusedcore_01",
+    "Name": "주입된 핵",
+    "Description": "매 전투 시작 시 전기를 3번 영창합니다. (대체 유물)",
+    "SpawnCharacter": "강화시작_디펙트",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_bagmarbles_01",
+    "Name": "구슬 주머니",
+    "Description": "매 전투 시작 시 모든 적에게 취약을 1 부여합니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_vajra_01",
+    "Name": "금강저",
+    "Description": "매 전투 시작 시 힘을 1 얻습니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_oddlysmoothstone_01",
+    "Name": "기묘하게 매끄러운 돌",
+    "Description": "매 전투 시작 시 민첩을 1 얻습니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_anchor_01",
+    "Name": "닻",
+    "Description": "매 전투 시작 시 방어도를 10 얻습니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      10
+    ]
+  },
+  {
+    "Id": "relic_strawberry_01",
+    "Name": "딸기",
+    "Description": "획득 시 최대 체력이 7 증가합니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      7
+    ]
+  },
+  {
+    "Id": "relic_lantern_01",
+    "Name": "랜턴",
+    "Description": "매 전투 시작 시 추가로 1 에너지를 얻습니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_gorget_01",
+    "Name": "목 보호대",
+    "Description": "매 전투 시작 시 판금을 4 얻습니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      4
+    ]
+  },
+  {
+    "Id": "relic_centennialpuzzle_01",
+    "Name": "백년퍼즐",
+    "Description": "전투 중 처음으로 체력을 잃을 시 카드를 3장 뽑습니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_redmask_01",
+    "Name": "붉은 가면",
+    "Description": "매 전투 시작 시 모든 적에게 약화를 1 부여합니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_whetstone_01",
+    "Name": "숫돌",
+    "Description": "획득 시 무작위 공격 카드를 2장 강화합니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_mealticket_01",
+    "Name": "식권",
+    "Description": "상점 방에 진입할 때마다 체력을 15 회복합니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      15
+    ]
+  },
+  {
+    "Id": "relic_juzubracelet_01",
+    "Name": "염주",
+    "Description": "? 방에서 더 이상 일반 적 전투가 발생하지 않습니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_bookfiverings_01",
+    "Name": "오륜서",
+    "Description": "덱에 카드를 5장 추가할 때마다 체력을 20 회복합니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      5,
+      20
+    ]
+  },
+  {
+    "Id": "relic_venerableteaset_01",
+    "Name": "유서 깊은 차 세트",
+    "Description": "휴식 장소 진입 후 다음 전투 시작 시 1 에너지를 얻습니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_amethystaubergine_01",
+    "Name": "자수정 가지",
+    "Description": "적이 보상으로 주는 골드가 15 증가합니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      15
+    ]
+  },
+  {
+    "Id": "relic_bagpreparation_01",
+    "Name": "준비된 가방",
+    "Description": "매 전투 시작 시 카드를 추가로 2장 뽑습니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_bronzescales_01",
+    "Name": "청동 비늘",
+    "Description": "매 전투 시작 시 가시를 3 얻습니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_festivepopper_01",
+    "Name": "축제용 폭죽",
+    "Description": "매 전투 시작 시 모든 적에게 피해를 9 줍니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      9
+    ]
+  },
+  {
+    "Id": "relic_warpaint_01",
+    "Name": "출진 물감",
+    "Description": "획득 시 무작위 스킬 카드를 2장 강화합니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_strikedummy_01",
+    "Name": "타격용 인형",
+    "Description": "이름에 \"타격\"이 포함된 카드의 피해량이 3 증가합니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_pendulum_01",
+    "Name": "펜듈럼",
+    "Description": "3턴마다 카드를 1장 뽑습니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      3,
+      1
+    ]
+  },
+  {
+    "Id": "relic_potionbelt_01",
+    "Name": "포션 벨트",
+    "Description": "획득 시 포션 슬롯을 2개 얻습니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_bloodvial_01",
+    "Name": "피가 담긴 병",
+    "Description": "매 전투 시작 시 체력을 2 회복합니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_happyflower_01",
+    "Name": "행복한 꽃",
+    "Description": "3턴마다 1 에너지를 얻습니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      3,
+      1
+    ]
+  },
+  {
+    "Id": "relic_regalpillow_01",
+    "Name": "호화로운 베개",
+    "Description": "휴식을 취할 때마다 추가로 체력을 15 회복합니다.",
+    "SpawnCharacter": "일반유물",
+    "EffectValueList": [
+      15
+    ]
+  },
+  {
+    "Id": "relic_redskull_01",
+    "Name": "붉은 해골",
+    "Description": "체력이 50% 이하인 동안 추가 힘을 3 지닙니다.",
+    "SpawnCharacter": "일반유물_아이언클래드",
+    "EffectValueList": [
+      50,
+      3
+    ]
+  },
+  {
+    "Id": "relic_sneckoskull_01",
+    "Name": "스네코의 해골",
+    "Description": "중독을 부여할 때마다 추가로 중독을 1 부여합니다.",
+    "SpawnCharacter": "일반유물_사일런트",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_fencingmanual_01",
+    "Name": "검술 안내서",
+    "Description": "매 전투 시작 시 단조 10을 얻습니다.",
+    "SpawnCharacter": "일반유물_리젠트",
+    "EffectValueList": [
+      10
+    ]
+  },
+  {
+    "Id": "relic_boneflute_01",
+    "Name": "뼈 플루트",
+    "Description": "골골이가 공격할 때마다 방어도를 2 얻습니다.",
+    "SpawnCharacter": "일반유물_네크로바인더",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_datadisk_01",
+    "Name": "데이터 디스크",
+    "Description": "매 전투 시작 시 밀집을 1 얻습니다.",
+    "SpawnCharacter": "일반유물_디펙트",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_gremlinhorn_01",
+    "Name": "그렘린 뿔",
+    "Description": "적이 죽을 때마다 1 에너지와 1 드로우를 얻습니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      1,
+      1
+    ]
+  },
+  {
+    "Id": "relic_miniaturecannon_01",
+    "Name": "미니어처 대포",
+    "Description": "강화된 공격 카드의 피해량이 3 증가합니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_sparklingrouge_01",
+    "Name": "반짝이는 립스틱",
+    "Description": "세 번째 턴 시작 시 힘 1, 민첩 1을 얻습니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      3,
+      1,
+      1
+    ]
+  },
+  {
+    "Id": "relic_pear_01",
+    "Name": "배",
+    "Description": "획득 시 최대 체력이 10 증가합니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      10
+    ]
+  },
+  {
+    "Id": "relic_planisphere_01",
+    "Name": "별자리판",
+    "Description": "? 방에 진입할 때마다 체력을 5 회복합니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      5
+    ]
+  },
+  {
+    "Id": "relic_kusarigama_01",
+    "Name": "사슬낫",
+    "Description": "한 턴에 공격 카드를 3장 사용할 때마다 피해 6을 줍니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      3,
+      6
+    ]
+  },
+  {
+    "Id": "relic_petrifiedtoad_01",
+    "Name": "석화된 두꺼비",
+    "Description": "매 전투 시작 시 포션 모양 돌 1개를 생성합니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_tuningfork_01",
+    "Name": "소리굽쇠",
+    "Description": "스킬 카드를 10장 사용할 때마다 방어도를 7 얻습니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      10,
+      7
+    ]
+  },
+  {
+    "Id": "relic_horncleat_01",
+    "Name": "소뿔모양 걸이",
+    "Description": "두 번째 턴 시작 시 방어도를 14 얻습니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      2,
+      14
+    ]
+  },
+  {
+    "Id": "relic_mercuryhourglass_01",
+    "Name": "수은 모래시계",
+    "Description": "내 턴 시작 시 모든 적에게 피해를 3 줍니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_nunchaku_01",
+    "Name": "쌍절곤",
+    "Description": "공격 카드를 10장 사용할 때마다 1 에너지를 얻습니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      10,
+      1
+    ]
+  },
+  {
+    "Id": "relic_akabeko_01",
+    "Name": "아카베코",
+    "Description": "매 전투 시작 시 활력을 8 얻습니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      8
+    ]
+  },
+  {
+    "Id": "relic_eternalfeather_01",
+    "Name": "영원의 깃털",
+    "Description": "휴식 장소 진입 시 덱의 카드 5장마다 체력을 3 회복합니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      5,
+      3
+    ]
+  },
+  {
+    "Id": "relic_permafrost_01",
+    "Name": "영원한 얼음",
+    "Description": "매 전투마다 처음으로 파워 카드 사용 시 방어도 7 획득",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      1,
+      7
+    ]
+  },
+  {
+    "Id": "relic_lastingcandy_01",
+    "Name": "오래 가는 사탕",
+    "Description": "두 번의 전투마다 카드 보상에 파워 카드가 1장 추가됩니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      2,
+      1
+    ]
+  },
+  {
+    "Id": "relic_orichalcum_01",
+    "Name": "오리하르콘",
+    "Description": "내 턴 종료 시 방어도가 없다면 방어도를 6 획득합니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      6
+    ]
+  },
+  {
+    "Id": "relic_vambrace_01",
+    "Name": "완갑",
+    "Description": "처음으로 카드를 통해 얻는 방어도가 2배로 증가합니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_tinymailbox_01",
+    "Name": "작은 우편함",
+    "Description": "휴식을 취할 때마다 무작위 포션을 2개 생성합니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_ornamentalfan_01",
+    "Name": "장식용 부채",
+    "Description": "한 턴에 공격 카드를 3장 사용할 때마다 방어도를 4 얻습니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      3,
+      4
+    ]
+  },
+  {
+    "Id": "relic_bowlerhat_01",
+    "Name": "중절모",
+    "Description": "골드를 25% 추가로 획득합니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      25
+    ]
+  },
+  {
+    "Id": "relic_stonecracker_01",
+    "Name": "착암기",
+    "Description": "매 전투 시작 시 무작위 카드 2장을 남은 전투 동안 강화합니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_ripplebasin_01",
+    "Name": "찰랑이는 대야",
+    "Description": "내 턴 동안 공격 카드를 사용하지 않았다면 방어도를 4 얻습니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      4
+    ]
+  },
+  {
+    "Id": "relic_parryingshield_01",
+    "Name": "쳐내기용 방패",
+    "Description": "매 턴 종료 시 방어도가 10 이상이라면 적에게 피해 6을 줍니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      10,
+      6
+    ]
+  },
+  {
+    "Id": "relic_candelabra_01",
+    "Name": "촛대",
+    "Description": "두 번째 턴 시작 시 2 에너지를 얻습니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      2,
+      2
+    ]
+  },
+  {
+    "Id": "relic_reptiletrinket_01",
+    "Name": "파충류 장식",
+    "Description": "포션을 사용할 때마다 이번 턴 동안 힘을 3 얻습니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_pantograph_01",
+    "Name": "팬터그래프",
+    "Description": "매 보스 전투 시작 시 체력을 25 회복합니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      25
+    ]
+  },
+  {
+    "Id": "relic_pennib_01",
+    "Name": "펜 촉",
+    "Description": "열 번째로 사용하는 공격 카드의 피해량이 2배로 증가합니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      10,
+      2
+    ]
+  },
+  {
+    "Id": "relic_letteropener_01",
+    "Name": "편지 칼",
+    "Description": "한 턴에 스킬 카드를 3장 사용할 때마다 모든 적에게 피해 5를 줍니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      3,
+      5
+    ]
+  },
+  {
+    "Id": "relic_luckyfysh_01",
+    "Name": "행운의 물교기",
+    "Description": "덱에 카드를 추가할 때마다 골드를 15 얻습니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      15
+    ]
+  },
+  {
+    "Id": "relic_josspaper_01",
+    "Name": "향지",
+    "Description": "카드를 5장 소멸시킬 때마다 카드를 1장 뽑습니다.",
+    "SpawnCharacter": "고급유물",
+    "EffectValueList": [
+      5,
+      1
+    ]
+  },
+  {
+    "Id": "relic_paperphrog_01",
+    "Name": "종이 게구리",
+    "Description": "취약 상태의 적이 받는 피해가 75%로 증가합니다. (기본 50%)",
+    "SpawnCharacter": "고급유물_아이언클래드",
+    "EffectValueList": [
+      75
+    ]
+  },
+  {
+    "Id": "relic_selfformingclay_01",
+    "Name": "자가 형성 점토",
+    "Description": "전투 동안 체력을 잃을 때마다 다음 턴에 방어도를 3 얻습니다.",
+    "SpawnCharacter": "고급유물_아이언클래드",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_tingsha_01",
+    "Name": "팅샤",
+    "Description": "내 턴 동안 카드를 버릴 때마다 1장당 무작위 적에게 피해 3을 줍니다.",
+    "SpawnCharacter": "고급유물_사일런트",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_twistedfunnel_01",
+    "Name": "뒤틀린 깔때기",
+    "Description": "매 전투 시작 시 모든 적에게 중독을 4 부여합니다.",
+    "SpawnCharacter": "고급유물_사일런트",
+    "EffectValueList": [
+      4
+    ]
+  },
+  {
+    "Id": "relic_galacticdust_01",
+    "Name": "은하 먼지",
+    "Description": "별 자원을 10 소모할 때마다 방어도를 10 얻습니다.",
+    "SpawnCharacter": "고급유물_리젠트",
+    "EffectValueList": [
+      10,
+      10
+    ]
+  },
+  {
+    "Id": "relic_regalite_01",
+    "Name": "리갈라이트",
+    "Description": "카드를 생성할 때마다 방어도 2를 얻습니다.",
+    "SpawnCharacter": "고급유물_리젠트",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_bookrepairknife_01",
+    "Name": "책 수리용 칼",
+    "Description": "하수인이 아닌 적이 종말로 죽을 때마다 체력을 3 회복합니다.",
+    "SpawnCharacter": "고급유물_네크로바인더",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_funerarymask_01",
+    "Name": "장례용 가면",
+    "Description": "매 전투 시작 시 뽑을 카드 더미에 영혼을 3장 섞어 넣습니다.",
+    "SpawnCharacter": "고급유물_네크로바인더",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_goldplatedcables_01",
+    "Name": "판금 케이블",
+    "Description": "가장 오른쪽에 있는 구체의 지속 효과가 추가로 1번 더 발동합니다.",
+    "SpawnCharacter": "고급유물_디펙트",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_symbioticvirus_01",
+    "Name": "공생 바이러스",
+    "Description": "매 전투 시작 시 암흑을 1번 영창합니다.",
+    "SpawnCharacter": "고급유물_디펙트",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_gamepiece_01",
+    "Name": "게임용 말",
+    "Description": "파워 카드를 사용할 때마다 카드를 1장 뽑습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_meatonthebone_01",
+    "Name": "고깃덩어리",
+    "Description": "매 전투 종료 시 남은 체력이 50% 이하라면 체력을 12 회복합니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      50,
+      12
+    ]
+  },
+  {
+    "Id": "relic_beatingremnant_01",
+    "Name": "고동치는 잔여물",
+    "Description": "내가 한 턴에 잃는 체력이 20을 넘을 수 없습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      20
+    ]
+  },
+  {
+    "Id": "relic_razortooth_01",
+    "Name": "날카로운 이빨",
+    "Description": "카드를 사용할 때마다 그 카드를 남은 전투 동안 강화합니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_oldcoin_01",
+    "Name": "낡은 동전",
+    "Description": "획득 시 골드를 300 얻습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      300
+    ]
+  },
+  {
+    "Id": "relic_moltenegg_01",
+    "Name": "녹아내린 알",
+    "Description": "공격 카드를 덱에 추가할 때마다 그 카드를 강화합니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_lizandtail_01",
+    "Name": "도마뱀 꼬리",
+    "Description": "체력이 0이 될 때 최대 체력의 50%만큼 체력을 회복합니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      50
+    ]
+  },
+  {
+    "Id": "relic_gamblingchip_01",
+    "Name": "도박용 칩",
+    "Description": "매 전투 시작 시 원하는 만큼 카드를 버리고 다시 뽑습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_mango_01",
+    "Name": "망고",
+    "Description": "획득 시 최대 체력이 14 상승합니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      14
+    ]
+  },
+  {
+    "Id": "relic_cloakclasp_01",
+    "Name": "망토 걸쇠",
+    "Description": "내 턴 종료 시 손에 있는 카드 1장당 방어도를 1 얻습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_unceasingtop_01",
+    "Name": "멈추지 않는 팽이",
+    "Description": "내 턴 동안 손에 카드가 없다면 카드를 1장 뽑습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_rainbowring_01",
+    "Name": "무지개 반지",
+    "Description": "매 턴 공격, 스킬, 파워를 처음 모두 사용 시 힘 1, 민첩 1 획득",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      1,
+      1
+    ]
+  },
+  {
+    "Id": "relic_mummifiedhand_01",
+    "Name": "미라의 손",
+    "Description": "파워 카드 사용 시 손의 무작위 카드 1장의 비용이 0이 됩니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_thecourier_01",
+    "Name": "배달원",
+    "Description": "상점 물품 판매 금액이 20% 감소하며 품절되지 않습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      20
+    ]
+  },
+  {
+    "Id": "relic_artofwar_01",
+    "Name": "병법서",
+    "Description": "내 턴 동안 공격 카드를 쓰지 않으면 다음 턴 1 에너지를 얻습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_shovel_01",
+    "Name": "삽",
+    "Description": "휴식 장소에서 발굴을 통해 무작위 유물을 획득할 수 있습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_chandelier_01",
+    "Name": "샹들리에",
+    "Description": "세 번째 턴 시작 시 3 에너지를 얻습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      3,
+      3
+    ]
+  },
+  {
+    "Id": "relic_stonecalendar_01",
+    "Name": "석재 달력",
+    "Description": "7턴 종료 시 모든 적에게 피해를 52 줍니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      7,
+      52
+    ]
+  },
+  {
+    "Id": "relic_captainswheel_01",
+    "Name": "선장의 타륜",
+    "Description": "세 번째 턴 시작 시 방어도를 18 얻습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      3,
+      18
+    ]
+  },
+  {
+    "Id": "relic_unsettlinglamp_01",
+    "Name": "섬뜩한 램프",
+    "Description": "처음으로 적에게 해로운 효과를 부여하는 카드 사용 시 효과가 2배가 됨",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_kunai_01",
+    "Name": "수리검",
+    "Description": "한 턴에 공격 카드를 3장 사용할 때마다 민첩을 1 얻습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      3,
+      1
+    ]
+  },
+  {
+    "Id": "relic_icecream_01",
+    "Name": "아이스크림",
+    "Description": "턴 종료 시 남은 에너지가 사라지지 않고 이월됩니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_frozenegg_01",
+    "Name": "얼어붙은 알",
+    "Description": "파워 카드를 덱에 추가할 때마다 그 카드를 강화합니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_intimidatinghelmet_01",
+    "Name": "위압적인 투구",
+    "Description": "비용이 2 이상인 카드를 사용할 때마다 방어도를 4 얻습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      2,
+      4
+    ]
+  },
+  {
+    "Id": "relic_toxicegg_01",
+    "Name": "유독성 알",
+    "Description": "스킬 카드를 덱에 추가할 때마다 그 카드를 강화합니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_prayerwheel_01",
+    "Name": "전경기",
+    "Description": "일반 적이 카드 보상을 1회 추가로 제공합니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_vexingpuzzlebox_01",
+    "Name": "짜증나는 퍼즐상자",
+    "Description": "매 전투 시작 시 무작위 카드 1장을 이번 턴 동안 비용 없이 획득",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_girya_01",
+    "Name": "케틀벨",
+    "Description": "휴식 장소에서 힘을 획득할 수 있습니다. (최대 3번)",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_tungstenrod_01",
+    "Name": "텅스텐 막대",
+    "Description": "체력을 잃을 때마다 피해량을 1만큼 덜 잃습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_sturdyclamp_01",
+    "Name": "튼튼한 조임쇠",
+    "Description": "턴 사이에 방어도가 최대 10까지 유지됩니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      10
+    ]
+  },
+  {
+    "Id": "relic_shuriken_01",
+    "Name": "표창",
+    "Description": "한 턴에 공격 카드를 3장 사용할 때마다 힘을 1 얻습니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      3,
+      1
+    ]
+  },
+  {
+    "Id": "relic_bellows_01",
+    "Name": "풀무",
+    "Description": "매 전투 시작 시 손에 있는 모든 카드가 강화됩니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_whitestar_01",
+    "Name": "하얀 별",
+    "Description": "엘리트가 희귀 카드 보상을 1회 추가로 제공합니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_whitebeaststatue_01",
+    "Name": "하얀 짐승 석상",
+    "Description": "전투 보상에 포션이 항상 등장합니다.",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      100
+    ]
+  },
+  {
+    "Id": "relic_pocketwatch_01",
+    "Name": "회중시계",
+    "Description": "내 턴 동안 카드를 3장 이하로 쓰면 다음 턴 카드를 3장 더 뽑음",
+    "SpawnCharacter": "희귀유물",
+    "EffectValueList": [
+      3,
+      3
+    ]
+  },
+  {
+    "Id": "relic_charonsashes_01",
+    "Name": "카론의 유골",
+    "Description": "카드를 소멸시킬 때마다 모든 적에게 피해를 3 줍니다.",
+    "SpawnCharacter": "희귀유물_아이언클래드",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_demontongue_01",
+    "Name": "악마의 혓바닥",
+    "Description": "내 턴 동안 처음으로 체력을 잃을 시 동일한 양을 즉시 회복함",
+    "SpawnCharacter": "희귀유물_아이언클래드",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_ruinedhelmet_01",
+    "Name": "파손된 투구",
+    "Description": "매 전투마다 처음으로 힘을 얻을 시 얻는 양이 2배가 됩니다.",
+    "SpawnCharacter": "희귀유물_아이언클래드",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_helicaldart_01",
+    "Name": "나선형 다트",
+    "Description": "단도를 사용할 때마다 이번 턴 동안 민첩을 1 얻습니다.",
+    "SpawnCharacter": "희귀유물_사일런트",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_paperkrane_01",
+    "Name": "종이 핰",
+    "Description": "약화 상태의 적이 가하는 피해가 40% 감소합니다. (기본 25%)",
+    "SpawnCharacter": "희귀유물_사일런트",
+    "EffectValueList": [
+      40
+    ]
+  },
+  {
+    "Id": "relic_toughbandages_01",
+    "Name": "질긴 붕대",
+    "Description": "내 턴 동안 카드를 버릴 때마다 방어도를 3 얻습니다.",
+    "SpawnCharacter": "희귀유물_사일런트",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_lunarpastry_01",
+    "Name": "달 모양 페스츄리",
+    "Description": "내 턴 종료 시 별 자원을 1 얻습니다.",
+    "SpawnCharacter": "희귀유물_리젠트",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_miniregent_01",
+    "Name": "미니 리젠트",
+    "Description": "매 턴마다 처음으로 별 자원을 소모 시 힘을 1 얻습니다.",
+    "SpawnCharacter": "희귀유물_리젠트",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_orangedough_01",
+    "Name": "주황색 반죽",
+    "Description": "매 전투 시작 시 무작위 무색 카드를 2장 손으로 가져옵니다.",
+    "SpawnCharacter": "희귀유물_리젠트",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_bighat_01",
+    "Name": "커다란 모자",
+    "Description": "매 전투 시작 시 무작위 휘발성 카드 2장을 손으로 가져옵니다.",
+    "SpawnCharacter": "희귀유물_네크로바인더",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_bookmark_01",
+    "Name": "책갈피",
+    "Description": "턴 종료 시 보존된 카드 중 1장의 비용이 사용 전까지 1 감소함",
+    "SpawnCharacter": "희귀유물_네크로바인더",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_ivorytile_01",
+    "Name": "상아 패",
+    "Description": "비용이 2 이상인 카드를 사용할 때마다 1 에너지를 얻습니다.",
+    "SpawnCharacter": "희귀유물_네크로바인더",
+    "EffectValueList": [
+      2,
+      1
+    ]
+  },
+  {
+    "Id": "relic_emotionchip_01",
+    "Name": "감정 칩",
+    "Description": "이전 턴 동안 체력을 잃었다면 턴 시작 시 모든 구체 지속효과 발동",
+    "SpawnCharacter": "희귀유물_디펙트",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_metronome_01",
+    "Name": "메트로놈",
+    "Description": "매 전투마다 처음으로 구체를 7번 영창 시 모든 적에게 피해 30",
+    "SpawnCharacter": "희귀유물_디펙트",
+    "EffectValueList": [
+      7,
+      30
+    ]
+  },
+  {
+    "Id": "relic_powercell_01",
+    "Name": "동력 전지",
+    "Description": "매 전투 시작 시 덱에서 비용이 0인 카드를 2장 손으로 가져옴",
+    "SpawnCharacter": "희귀유물_디펙트",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_cauldron_01",
+    "Name": "가마솥",
+    "Description": "획득 시 무작위 포션을 5개 생성합니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      5
+    ]
+  },
+  {
+    "Id": "relic_toolbox_01",
+    "Name": "공구함",
+    "Description": "매 전투 시작 시 무작위 무색 카드 3장 중 1장을 선택해 가져옴",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      3,
+      1
+    ]
+  },
+  {
+    "Id": "relic_ringingtriangle_01",
+    "Name": "공명하는 트라이앵글",
+    "Description": "매 전투마다 첫 턴에 손에 있는 카드를 보존합니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_wingcharm_01",
+    "Name": "날개 부적",
+    "Description": "매 카드 보상마다 무작위 카드 1장이 신속 인챈트 상태로 등장",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_dollysmirror_01",
+    "Name": "돌리의 거울",
+    "Description": "획득 시 덱에 있는 카드의 복사본을 1장 얻습니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_dingyrug_01",
+    "Name": "때묻은 러그",
+    "Description": "카드 보상 선택지에 이제 무색 카드가 포함될 수 있습니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_leewaffle_01",
+    "Name": "리의 와플",
+    "Description": "획득 시 최대 체력이 7 상승하고 모든 체력을 완전히 회복합니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      7
+    ]
+  },
+  {
+    "Id": "relic_membershipcard_01",
+    "Name": "멤버십 카드",
+    "Description": "상점이 판매하는 모든 상품의 가격이 50% 할인됩니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      50
+    ]
+  },
+  {
+    "Id": "relic_kifuda_01",
+    "Name": "목패",
+    "Description": "획득 시 최대 3장의 카드에 숙련 인챈트를 적용합니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_miniaturetent_01",
+    "Name": "미니어처 텐트",
+    "Description": "휴식 장소에서 선택지(휴식, 재련 등)를 원하는 만큼 선택 가능",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_beltbuckle_01",
+    "Name": "벨트 버클",
+    "Description": "보유한 포션이 없는 동안 추가 민첩을 2 지닙니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_burningsticks_01",
+    "Name": "불타는 나뭇가지",
+    "Description": "처음 스킬 카드를 소멸시킬 시 그 카드의 복사본 1장을 획득함",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_screamingflagon_01",
+    "Name": "비명을 지르는 병",
+    "Description": "턴 종료 시 손에 카드가 없다면 모든 적에게 피해를 20 줍니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      20
+    ]
+  },
+  {
+    "Id": "relic_bread_01",
+    "Name": "빵",
+    "Description": "첫 턴 에너지 -1, 이후 다른 모든 턴 시작 시 에너지 +1",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      -1,
+      1
+    ]
+  },
+  {
+    "Id": "relic_mysticlighter_01",
+    "Name": "신비로운 라이터",
+    "Description": "인챈트된 공격 카드의 피해량이 9 증가합니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      9
+    ]
+  },
+  {
+    "Id": "relic_royalstamp_01",
+    "Name": "왕실 도장",
+    "Description": "획득 시 공격이나 스킬 카드 중 1장을 선택해 왕실 인증 인챈트",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_dragonfruit_01",
+    "Name": "용과",
+    "Description": "골드를 획득할 때마다 최대 체력이 1 증가합니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_slingofcourage_01",
+    "Name": "용기의 투석구",
+    "Description": "매 엘리트 전투 시작 시 힘을 2 얻습니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_lavalamp_01",
+    "Name": "용암 램프",
+    "Description": "전투 동안 피해를 입지 않았다면 다음 막 카드 보상이 강화됨",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_gnarledhammer_01",
+    "Name": "울퉁불퉁한 망치",
+    "Description": "획득 시 최대 3장의 공격 카드에 예리 3을 인챈트합니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      3,
+      3
+    ]
+  },
+  {
+    "Id": "relic_ghostseed_01",
+    "Name": "유령 씨앗",
+    "Description": "타격과 수비 카드가 휘발성 속성을 얻습니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_abacus_01",
+    "Name": "주판",
+    "Description": "뽑을 카드 더미를 섞을 때마다 방어도를 6 얻습니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      6
+    ]
+  },
+  {
+    "Id": "relic_chemicalx_01",
+    "Name": "케미컬 X",
+    "Description": "비용이 X인 카드의 효과 수치가 2 증가합니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_orrery_01",
+    "Name": "태양계 모형",
+    "Description": "획득 시 즉시 카드 보상을 5번 얻습니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      5
+    ]
+  },
+  {
+    "Id": "relic_punchdagger_01",
+    "Name": "펀치 대거",
+    "Description": "획득 시 공격 카드 1장에 기세 5를 인챈트합니다.",
+    "SpawnCharacter": "상점유물",
+    "EffectValueList": [
+      1,
+      5
+    ]
+  },
+  {
+    "Id": "relic_brimstone_01",
+    "Name": "유황",
+    "Description": "내 턴 시작 시 내가 힘 2를 얻고, 모든 적이 힘 1을 얻습니다.",
+    "SpawnCharacter": "상점유물_아이언클래드",
+    "EffectValueList": [
+      2,
+      1
+    ]
+  },
+  {
+    "Id": "relic_ninjascroll_01",
+    "Name": "닌자 두루마리",
+    "Description": "매 전투 시작 시 단도 카드를 3장 손으로 가져옵니다.",
+    "SpawnCharacter": "상점유물_사일런트",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_vitruvianminion_01",
+    "Name": "비트루비우스적 하수인",
+    "Description": "이름에 \"하수인\"이 포함된 카드의 대미지와 방어도가 2배 증가",
+    "SpawnCharacter": "상점유물_리젠트",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_undyingsigil_01",
+    "Name": "불멸의 인장",
+    "Description": "체력 이상의 종말을 보유한 적이 가하는 피해량이 50% 감소함",
+    "SpawnCharacter": "상점유물_네크로바인더",
+    "EffectValueList": [
+      50
+    ]
+  },
+  {
+    "Id": "relic_runiccapacitor_01",
+    "Name": "룬 축전기",
+    "Description": "매 전투 시작 시 구체 슬롯을 추가로 3개 얻습니다.",
+    "SpawnCharacter": "상점유물_디펙트",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_lostwisp_01",
+    "Name": "길 잃은 위습",
+    "Description": "파워 카드를 사용할 때마다 모든 적에게 피해를 8 줍니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      8
+    ]
+  },
+  {
+    "Id": "relic_pollinouscore_01",
+    "Name": "꽃가루 핵",
+    "Description": "4턴마다 카드를 추가로 2장 뽑습니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      4,
+      2
+    ]
+  },
+  {
+    "Id": "relic_anchor_fake",
+    "Name": "닻?",
+    "Description": "매 전투 시작 시 방어도를 4 얻습니다. (짭유물)",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      4
+    ]
+  },
+  {
+    "Id": "relic_swordofstone_01",
+    "Name": "돌 검",
+    "Description": "엘리트를 5번 처치한 후에 강력한 유물로 변형됩니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      5
+    ]
+  },
+  {
+    "Id": "relic_dreamcatcher_01",
+    "Name": "드림캐처",
+    "Description": "휴식을 취할 때마다 덱에 카드를 1장 추가할 수 있습니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_leewaffle_fake",
+    "Name": "리의 와?플",
+    "Description": "획득 시 체력을 전체의 10%만큼 회복합니다. (짭유물)",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      10
+    ]
+  },
+  {
+    "Id": "relic_mango_fake",
+    "Name": "망?고",
+    "Description": "획득 시 최대 체력이 3 상승합니다. (짭유물)",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_teaofdiscourtesy_01",
+    "Name": "무례함의 차",
+    "Description": "다음 전투 시작 시 뽑을 카드 더미에 어지러움 2장 혼합",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_daughterwind_01",
+    "Name": "바람의 딸",
+    "Description": "공격 카드를 사용할 때마다 방어도를 1 얻습니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_mrstruggles_01",
+    "Name": "버둥 씨",
+    "Description": "내 턴 시작 시 모든 적에게 현재 턴 수와 동일한 피해를 줌",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_swordofjade_01",
+    "Name": "비취 검",
+    "Description": "매 전투 시작 시 힘을 3 얻습니다. (돌 검 변형)",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_bingbong_01",
+    "Name": "빙봉",
+    "Description": "덱에 카드를 추가할 때마다 그 카드의 복사본 1장을 추가함",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_bonetea_01",
+    "Name": "뼈다귀 차",
+    "Description": "다음 전투 시작 시 손에 있는 모든 카드를 강화합니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_merchantrug_fake",
+    "Name": "상인의 양?탄자",
+    "Description": "초라한 모조품. 아무런 효과도 작동하지 않습니다. (짭유물)",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_sneckoeye_fake",
+    "Name": "스?네코의 눈",
+    "Description": "매 전투 시작 시 혼란 상태이상 디버프가 부여됩니다. (짭유물)",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_mawbank_01",
+    "Name": "아귀 저금통",
+    "Description": "층을 오를 때마다 골드 12 획득 (상점에서 소비 시 파괴)",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      12
+    ]
+  },
+  {
+    "Id": "relic_chosencheese_01",
+    "Name": "엄선된 치즈",
+    "Description": "매 전투 종료 시 최대 체력을 1 얻습니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_historycourse_01",
+    "Name": "역사 강의서",
+    "Description": "내 턴 시작 시 가장 최근에 사용한 공격/스킬 복사본 발동",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_orichalcum_fake",
+    "Name": "오리하르?콘",
+    "Description": "내 턴 종료 시 방어도가 없다면 방어도를 3 획득합니다. (짭유물)",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      3
+    ]
+  },
+  {
+    "Id": "relic_royalpoison_01",
+    "Name": "왕실의 독",
+    "Description": "매 전투 시작 시 체력을 4 잃습니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      4
+    ]
+  },
+  {
+    "Id": "relic_wongobadge_01",
+    "Name": "웡고스 감사 배지",
+    "Description": "아무런 효과도 작동하지 않는 수집용 배지 유물입니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      0
+    ]
+  },
+  {
+    "Id": "relic_wongoticket_01",
+    "Name": "웡고스 비밀 티켓",
+    "Description": "5번의 전투가 끝난 뒤에 무작위 유물을 3개 획득합니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      5,
+      3
+    ]
+  },
+  {
+    "Id": "relic_teaset_fake",
+    "Name": "유서 깊?은 차 세트",
+    "Description": "휴식 장소 진입 시 다음 전투 추가 에너지 +1 (짭유물)",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_embertea_01",
+    "Name": "잉걸불 차",
+    "Description": "다음 5번의 전투 시작 시 힘을 2 얻습니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      5,
+      2
+    ]
+  },
+  {
+    "Id": "relic_forgottensoul_01",
+    "Name": "잊힌 영혼",
+    "Description": "카드를 소멸시킬 때마다 무작위 적에게 피해를 1 줍니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_theboot_01",
+    "Name": "장화",
+    "Description": "4 이하의 막히지 않은 공격 피해를 줄 때 피해량이 5로 상승",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      4,
+      5
+    ]
+  },
+  {
+    "Id": "relic_byrdpip_01",
+    "Name": "짹짹이",
+    "Description": "획득 시 섀 급습 카드를 획득하며 아기 섀가 동행합니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      9999
+    ]
+  },
+  {
+    "Id": "relic_bigmushroom_01",
+    "Name": "커다란 버섯",
+    "Description": "최대 체력 20% 증가, 매 전투 시작 시 카드 2장 덜 뽑음",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      20,
+      -2
+    ]
+  },
+  {
+    "Id": "relic_strikedummy_fake",
+    "Name": "타격용 인?형",
+    "Description": "이름에 \"타격\"이 포함된 카드의 피해량이 1 증가합니다. (짭유물)",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_fresnellens_01",
+    "Name": "프레넬 렌즈",
+    "Description": "방어 카드를 덱에 추가할 때마다 기민함 2 인챈트 적용",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_bloodvial_fake",
+    "Name": "피가 담?긴 병",
+    "Description": "매 전투 시작 시 체력을 1 회복합니다. (짭유물)",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      1
+    ]
+  },
+  {
+    "Id": "relic_handdrill_01",
+    "Name": "핸드 드릴",
+    "Description": "적의 방어도를 파괴할 때마다 취약을 2 부여합니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      2
+    ]
+  },
+  {
+    "Id": "relic_happyflower_fake",
+    "Name": "행복한 꽃???",
+    "Description": "5턴마다 1 에너지를 얻습니다. (짭유물)",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      5,
+      1
+    ]
+  },
+  {
+    "Id": "relic_fragrantmushroom_01",
+    "Name": "향기로운 버섯",
+    "Description": "획득 시 최대 체력을 15 잃고 무작위 카드 3장을 강화합니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      -15,
+      3
+    ]
+  },
+  {
+    "Id": "relic_darkstoneperiapt_01",
+    "Name": "흑옥 부적",
+    "Description": "저주를 얻을 때마다 최대 체력이 6 증가합니다.",
+    "SpawnCharacter": "이벤트유물",
+    "EffectValueList": [
+      6
+    ]
+  }
+]

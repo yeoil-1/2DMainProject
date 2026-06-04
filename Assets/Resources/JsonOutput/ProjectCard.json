@@ -1,0 +1,1563 @@
+[
+  {
+    "Id": "card_strike_01",
+    "Name": "타격",
+    "Description": "피해를 6 줍니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      6
+    ],
+    "Grade": "시작",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      9
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_bash_01",
+    "Name": "강타",
+    "Description": "피해를 8 줍니다. 취약을 2 부여합니다.",
+    "Cost": 2,
+    "CardType": "공격",
+    "EffectValueList": [
+      8,
+      2
+    ],
+    "Grade": "시작",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      10,
+      3
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_defend_01",
+    "Name": "수비",
+    "Description": "방어도를 5 얻습니다.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      5
+    ],
+    "Grade": "시작",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      8
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_anger_01",
+    "Name": "분노",
+    "Description": "피해를 6 줍니다. 이 카드의 복사본 1장을 버린 카드 더미에 섞어 넣습니다.",
+    "Cost": 0,
+    "CardType": "공격",
+    "EffectValueList": [
+      6
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      8
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_moltenfist_01",
+    "Name": "녹아내리는 주먹",
+    "Description": "피해를 10 줍니다. 적이 보유한 취약이 2배로 증가합니다. 소멸.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      10
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      14
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_bodyslam_01",
+    "Name": "몸통 박치기",
+    "Description": "방어도만큼의 피해를 줍니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      0
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      0
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_headbutt_01",
+    "Name": "박치기",
+    "Description": "피해를 9 줍니다. 버린 카드 더미에서 카드를 1장 뽑을 카드 더미 맨 위에 놓습니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      9
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      12
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_swordboomerang_01",
+    "Name": "부메랑 칼날",
+    "Description": "무작위 적에게 피해를 3만큼 3번 줍니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      3,
+      3
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      3,
+      4
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_setupstrike_01",
+    "Name": "사전 타격",
+    "Description": "피해를 7 줍니다. 이번 턴 동안 힘을 2 얻습니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      7,
+      2
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      9,
+      3
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_twinstrike_01",
+    "Name": "이중 타격",
+    "Description": "피해를 5만큼 2번 줍니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      5,
+      2
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      7,
+      2
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_breakthrough_01",
+    "Name": "정면 돌파",
+    "Description": "체력을 1 잃습니다. 모든 적에게 피해를 9 줍니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      1,
+      9
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      1,
+      13
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_thunderclap_01",
+    "Name": "천둥",
+    "Description": "모든 적에게 피해를 4 주고 취약을 1 부여합니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      4,
+      1
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      7,
+      1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_ironwave_01",
+    "Name": "철의 파동",
+    "Description": "방어도를 5 얻습니다. 피해를 5 줍니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      5,
+      5
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      7,
+      7
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_pommelstrike_01",
+    "Name": "폼멜 타격",
+    "Description": "피해를 9 줍니다. 카드를 1장 뽑습니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      9,
+      1
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      10,
+      2
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_perfectedstrike_01",
+    "Name": "완벽한 타격",
+    "Description": "피해를 6 줍니다. 이름에 \"타격\"이 포함된 카드 1장당 피해량이 2 증가합니다.",
+    "Cost": 2,
+    "CardType": "공격",
+    "EffectValueList": [
+      6,
+      2
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      6,
+      3
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_cinder_01",
+    "Name": "잿불",
+    "Description": "피해를 18 줍니다. 무작위 카드를 1장 소멸 시킵니다.",
+    "Cost": 2,
+    "CardType": "공격",
+    "EffectValueList": [
+      18
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      24
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_bloodletting_01",
+    "Name": "사혈",
+    "Description": "체력을 3 잃고 에너지를 얻습니다.",
+    "Cost": 0,
+    "CardType": "스킬",
+    "EffectValueList": [
+      3
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      0
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_tremble_01",
+    "Name": "떨림",
+    "Description": "취약을 3 부여합니다. 소멸.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      3
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      4
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_armaments_01",
+    "Name": "전투장비",
+    "Description": "방어도를 5 얻습니다. 손에 있는 카드를 1장 강화합니다.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      5
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      5
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_truegrit_01",
+    "Name": "진정한 끈기",
+    "Description": "방어도를 7 얻습니다. 무작위 카드를 1장 소멸시킵니다.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      7
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      9
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_havoc_01",
+    "Name": "파괴",
+    "Description": "뽑을 카드 더미 맨 위의 카드를 사용한 뒤 소멸시킵니다.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      0
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      0
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_shrugitoff_01",
+    "Name": "흘려보내기",
+    "Description": "방어도를 8 얻습니다. 카드를 1장 뽑습니다.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      8,
+      1
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      11,
+      1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_bloodwall_01",
+    "Name": "피의 벽",
+    "Description": "체력을 2 잃습니다. 방어도를 16 얻습니다.",
+    "Cost": 2,
+    "CardType": "스킬",
+    "EffectValueList": [
+      2,
+      16
+    ],
+    "Grade": "일반",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      2,
+      20
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_whirlwind_01",
+    "Name": "소용돌이",
+    "Description": "모든 적에게 피해를 5만큼 X번 줍니다.",
+    "Cost": -1,
+    "CardType": "공격",
+    "EffectValueList": [
+      5
+    ],
+    "Grade": "고급",
+    "UpgradedCost": -1,
+    "UpgradedEffectValueList": [
+      8
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_spite_01",
+    "Name": "악의",
+    "Description": "피해를 5 줍니다. 이번 턴 동안 체력을 잃었다면, 2번 적중합니다.",
+    "Cost": 0,
+    "CardType": "공격",
+    "EffectValueList": [
+      5,
+      2
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      5,
+      3
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_bully_01",
+    "Name": "협박",
+    "Description": "피해를 4 줍니다. 대상 적이 보유한 취약마다 피해량이 2 증가합니다.",
+    "Cost": 0,
+    "CardType": "공격",
+    "EffectValueList": [
+      4,
+      2
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      4,
+      3
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_pillage_01",
+    "Name": "갈취",
+    "Description": "피해를 6 줍니다. 공격이 아닌 카드를 뽑을 때까지 카드를 뽑습니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      6
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      9
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_rampage_01",
+    "Name": "광란",
+    "Description": "피해를 9 줍니다. 이번 전투 동안 이 카드의 피해량이 5 증가합니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      9,
+      5
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      9,
+      9
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_ashenstrike_01",
+    "Name": "잿빛 타격",
+    "Description": "피해를 6 줍니다. 소멸된 카드 더미에 있는 카드 1장당 피해량이 3 증가합니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      6,
+      3
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      6,
+      4
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_dismantle_01",
+    "Name": "해체",
+    "Description": "피해를 8 줍니다. 대상 적이 취약 상태라면, 2번 적중합니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      8,
+      2
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      10,
+      2
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_hemokinesis_01",
+    "Name": "혈류",
+    "Description": "체력을 2 잃습니다. 피해를 15 줍니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      2,
+      15
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      2,
+      20
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_fightme_01",
+    "Name": "덤벼라!",
+    "Description": "피해를 5만큼 2번 줍니다. 힘을 3 얻습니다. 대상 적이 힘을 1 얻습니다.",
+    "Cost": 2,
+    "CardType": "공격",
+    "EffectValueList": [
+      5,
+      3,
+      1
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      6,
+      4,
+      1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_unrelenting_01",
+    "Name": "무자비",
+    "Description": "피해를 12 줍니다. 다음에 사용하는 공격 카드의 비용이 0이 됩니다.",
+    "Cost": 2,
+    "CardType": "공격",
+    "EffectValueList": [
+      12
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      18
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_uppercut_01",
+    "Name": "어퍼컷",
+    "Description": "피해를 12 줍니다. 약화를 1 부여합니다. 취약을 1 부여합니다.",
+    "Cost": 2,
+    "CardType": "공격",
+    "EffectValueList": [
+      12,
+      1,
+      1
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      12,
+      2,
+      2
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_bludgeon_01",
+    "Name": "몽둥이질",
+    "Description": "피해를 32 줍니다.",
+    "Cost": 3,
+    "CardType": "공격",
+    "EffectValueList": [
+      32
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 3,
+    "UpgradedEffectValueList": [
+      42
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_howlfrombeyond_01",
+    "Name": "저편의 울음소리",
+    "Description": "모든 적에게 피해를 16 줍니다. 내 턴 시작 시, 소멸된 카드 더미에서 사용됩니다.",
+    "Cost": 3,
+    "CardType": "공격",
+    "EffectValueList": [
+      16
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 3,
+    "UpgradedEffectValueList": [
+      21
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_stomp_01",
+    "Name": "짓밟기",
+    "Description": "모든 적에게 피해를 12 줍니다. 이번 턴 동안 사용한 공격 카드 1장당 비용이 1 감소합니다.",
+    "Cost": 3,
+    "CardType": "공격",
+    "EffectValueList": [
+      12,
+      1
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 3,
+    "UpgradedEffectValueList": [
+      15,
+      1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_rage_01",
+    "Name": "격노",
+    "Description": "이번 턴에 공격 카드를 사용할 때마다, 방어도를 3 얻습니다.",
+    "Cost": 0,
+    "CardType": "스킬",
+    "EffectValueList": [
+      3
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      5
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_battletrance_01",
+    "Name": "전투 최면",
+    "Description": "카드를 3장 뽑습니다. 이번 턴 동안 더 이상 카드를 뽑을 수 없습니다.",
+    "Cost": 0,
+    "CardType": "스킬",
+    "EffectValueList": [
+      3
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      4
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_colossus_01",
+    "Name": "거상",
+    "Description": "방어도를 5 얻습니다. 이번 턴에 취약 상태의 적에게서 받는 피해량이 50% 감소합니다.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      5,
+      50
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      8,
+      50
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_secondwind_01",
+    "Name": "기사회생",
+    "Description": "손에 있는 공격이 아닌 모든 카드를 소멸시킵니다. 소멸시킨 카드 1장당 방어도를 5 얻습니다.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      5
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      7
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_taunt_01",
+    "Name": "도발",
+    "Description": "방어도를 7 얻습니다. 취약을 1 부여합니다.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      7,
+      1
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      8,
+      2
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_burningpact_01",
+    "Name": "불타는 조약",
+    "Description": "카드를 1장 소멸시킵니다. 카드를 2장 뽑습니다.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      1,
+      2
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      1,
+      3
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_evileye_01",
+    "Name": "악마의 눈",
+    "Description": "방어도를 8 얻습니다. 이번 턴 동안 소멸시킨 카드가 있다면 방어도를 추가로 8 얻습니다.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      8,
+      8
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      11,
+      11
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_forgottenritual_01",
+    "Name": "잊힌 의식",
+    "Description": "이번 턴에 카드를 소멸시켰다면, 에너지를 얻습니다. 소멸",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      0
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      4
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_dominate_01",
+    "Name": "제압",
+    "Description": "취약을 1 부여합니다. 대상 적이 보유한 취약마다 힘을 1 얻습니다. 소멸.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      1,
+      1
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      2,
+      1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_infernalblade_01",
+    "Name": "지옥검",
+    "Description": "무작위 공격 카드를 1장 손으로 가져옵니다. 이번 턴 동안 그 카드를 비용 없이 사용할 수 있습니다. 소멸.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      1
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_expectafight_01",
+    "Name": "싸움 준비",
+    "Description": "손에 있는 공격 카드 1장당 에너지를 얻습니다. 이번 턴에 추가로 에너지를 얻을 수 없습니다.",
+    "Cost": 2,
+    "CardType": "스킬",
+    "EffectValueList": [
+      1
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_flamebarrier_01",
+    "Name": "화염 장벽",
+    "Description": "방어도를 12 얻습니다. 이번 턴에 공격을 받을 때마다, 공격한 적에게 피해를 4 줍니다.",
+    "Cost": 2,
+    "CardType": "스킬",
+    "EffectValueList": [
+      12,
+      4
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      16,
+      6
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_drumofbattle_01",
+    "Name": "전투의 북소리",
+    "Description": "카드를 2장 뽑습니다. 내 턴 시작 시, 뽑을 카드 더미 맨 위의 카드를 소멸시킵니다.",
+    "Cost": 1,
+    "CardType": "파워",
+    "EffectValueList": [
+      2
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      3
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_stonearmor_01",
+    "Name": "돌 갑옷",
+    "Description": "판금을 4 얻습니다.",
+    "Cost": 1,
+    "CardType": "파워",
+    "EffectValueList": [
+      4
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      6
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_feelnopain_01",
+    "Name": "무감각",
+    "Description": "카드가 소멸될 때마다, 방어도를 3 얻습니다.",
+    "Cost": 1,
+    "CardType": "파워",
+    "EffectValueList": [
+      3
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      4
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_inflame_01",
+    "Name": "발화",
+    "Description": "힘을 2 얻습니다.",
+    "Cost": 1,
+    "CardType": "파워",
+    "EffectValueList": [
+      2
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      3
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_inferno_01",
+    "Name": "불바다",
+    "Description": "내 턴 시작 시, 체력을 1 잃습니다. 내 턴 동안 체력을 잃을 때마다, 모든 적에게 피해를 6 줍니다.",
+    "Cost": 1,
+    "CardType": "파워",
+    "EffectValueList": [
+      1,
+      6
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      1,
+      9
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_juggling_01",
+    "Name": "저글링",
+    "Description": "매 턴마다 세 번째로 사용하는 공격 카드의 복사본을 1장 손으로 가져옵니다.",
+    "Cost": 1,
+    "CardType": "파워",
+    "EffectValueList": [
+      3,
+      1
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      3,
+      1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_rupture_01",
+    "Name": "파열",
+    "Description": "내 턴 동안 체력을 잃을 때마다, 힘을 1 얻습니다.",
+    "Cost": 1,
+    "CardType": "파워",
+    "EffectValueList": [
+      1
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      2
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_vicious_01",
+    "Name": "포악함",
+    "Description": "취약을 부여할 때마다, 카드를 1장 뽑습니다.",
+    "Cost": 1,
+    "CardType": "파워",
+    "EffectValueList": [
+      1
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      2
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_stampede_01",
+    "Name": "쇄도",
+    "Description": "내 턴 종료 시, 손에 있는 무작위 공격 카드 1장이 무작위 적에게 사용됩니다.",
+    "Cost": 2,
+    "CardType": "파워",
+    "EffectValueList": [
+      1
+    ],
+    "Grade": "고급",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_pactsend_01",
+    "Name": "조약의 끝",
+    "Description": "소멸된 카드 더미에 카드가 3장 이상일 때만 사용할 수 있습니다. 모든 적에게 피해를 17 줍니다.",
+    "Cost": 0,
+    "CardType": "공격",
+    "EffectValueList": [
+      3,
+      17
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      3,
+      23
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_thrash_01",
+    "Name": "난타",
+    "Description": "피해를 4만큼 2번 줍니다. 손에 있는 무작위 공격 카드를 1장 소멸시키고, 그 카드의 피해량을 이 카드에 추가합니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      4,
+      2
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      6,
+      2
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_conflagration_01",
+    "Name": "대화재",
+    "Description": "모든 적에게 피해를 8 줍니다. 이번 턴에 사용한 다른 공격 카드 1장당 피해량이 2 증가합니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      8,
+      2
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      9,
+      3
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_feed_01",
+    "Name": "포식",
+    "Description": "피해를 10 줍니다. 치명타라면, 최대 체력이 3 증가합니다. 소멸.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      10,
+      3
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      12,
+      4
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_tearasunder_01",
+    "Name": "갈가리 찢기",
+    "Description": "피해를 5 줍니다. 이번 전투 동안 체력을 잃은 횟수만큼 반복합니다.",
+    "Cost": 2,
+    "CardType": "공격",
+    "EffectValueList": [
+      5
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      7
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_fiendfire_01",
+    "Name": "지옥불",
+    "Description": "손에 있는 모든 카드를 소멸시킵니다. 소멸시킨 카드 1장당 피해를 7 줍니다. 소멸.",
+    "Cost": 2,
+    "CardType": "공격",
+    "EffectValueList": [
+      7
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      10
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_mangle_01",
+    "Name": "난도질",
+    "Description": "피해를 15 줍니다. 이번 턴 동안 적이 힘을 10 잃습니다.",
+    "Cost": 3,
+    "CardType": "공격",
+    "EffectValueList": [
+      15,
+      10
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 3,
+    "UpgradedEffectValueList": [
+      20,
+      15
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_brand_01",
+    "Name": "낙인",
+    "Description": "체력을 1 잃습니다. 카드를 1장 소멸시킵니다. 힘을 1 얻습니다.",
+    "Cost": 0,
+    "CardType": "스킬",
+    "EffectValueList": [
+      1,
+      1,
+      1
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      1,
+      1,
+      2
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_cascade_01",
+    "Name": "연쇄",
+    "Description": "뽑을 카드 더미 맨 위의 무작위 카드를 X장 사용합니다.",
+    "Cost": -1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      -1
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": -1,
+    "UpgradedEffectValueList": [
+      -1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_primalforce_01",
+    "Name": "원시의 힘",
+    "Description": "손에 있는 모든 공격 카드를 거대한 바위로 변화시킵니다.",
+    "Cost": 0,
+    "CardType": "스킬",
+    "EffectValueList": [
+      16
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      20
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_offering_01",
+    "Name": "제물",
+    "Description": "체력을 6 잃습니다. 카드를 3장 뽑습니다. 소멸.",
+    "Cost": 0,
+    "CardType": "스킬",
+    "EffectValueList": [
+      6,
+      3
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      6,
+      5
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_onetwopunch_01",
+    "Name": "원투 펀치",
+    "Description": "이번 턴에, 다음에 사용하는 공격 카드가 1번 추가로 사용됩니다.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      1
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      2
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_stoke_01",
+    "Name": "화력 증폭",
+    "Description": "손에 있는 모든 카드를 소멸시킵니다. 소멸시킨 카드 1장당 무작위 카드 1장을 손으로 가져옵니다.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      1
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_impervious_01",
+    "Name": "무적",
+    "Description": "방어도를 30 얻습니다. 소멸.",
+    "Cost": 2,
+    "CardType": "스킬",
+    "EffectValueList": [
+      30
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      40
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_notyet_01",
+    "Name": "불굴",
+    "Description": "체력을 10 회복합니다. 소멸.",
+    "Cost": 2,
+    "CardType": "스킬",
+    "EffectValueList": [
+      10
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      13
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_aggression_01",
+    "Name": "공격성",
+    "Description": "내 턴 시작 시, 버린 카드 더미에서 무작위 공격 카드를 1장 손으로 가져오고 강화합니다.",
+    "Cost": 1,
+    "CardType": "파워",
+    "EffectValueList": [
+      1
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_cruelty_01",
+    "Name": "악랄함",
+    "Description": "취약 상태의 적이 받는 피해가 25% 증가합니다.",
+    "Cost": 1,
+    "CardType": "파워",
+    "EffectValueList": [
+      25
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      50
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_crimsonmantle_01",
+    "Name": "핏빛 망토",
+    "Description": "내 턴 시작 시, 체력을 1 잃고 방어도를 8 얻습니다.",
+    "Cost": 1,
+    "CardType": "파워",
+    "EffectValueList": [
+      1,
+      8
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      1,
+      10
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_pyre_01",
+    "Name": "불의 심장",
+    "Description": "매 턴 시작 시 에너지를 얻습니다.",
+    "Cost": 2,
+    "CardType": "파워",
+    "EffectValueList": [
+      1
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      2
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_darkembrace_01",
+    "Name": "어둠의 포옹",
+    "Description": "카드가 소멸될 때마다, 카드를 1장 뽑습니다.",
+    "Cost": 2,
+    "CardType": "파워",
+    "EffectValueList": [
+      1
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_unmovable_01",
+    "Name": "요지부동",
+    "Description": "매 턴마다 처음으로 카드를 통해 얻는 방어도가 2배가 됩니다.",
+    "Cost": 2,
+    "CardType": "파워",
+    "EffectValueList": [
+      2
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      2
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_juggernaut_01",
+    "Name": "절대적인 힘",
+    "Description": "방어도를 얻을 때마다, 무작위 적에게 피해를 5 줍니다.",
+    "Cost": 2,
+    "CardType": "파워",
+    "EffectValueList": [
+      5
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      7
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_hellraiser_01",
+    "Name": "지옥검무",
+    "Description": "이름에 \"타격\"이 포함된 카드를 뽑을 때마다, 무작위 적에게 사용합니다.",
+    "Cost": 2,
+    "CardType": "파워",
+    "EffectValueList": [
+      1
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_barricade_01",
+    "Name": "바리케이드",
+    "Description": "내 턴 시작 시 방어도가 사라지지 않습니다.",
+    "Cost": 3,
+    "CardType": "파워",
+    "EffectValueList": [
+      0
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      0
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_demonform_01",
+    "Name": "악마의 형상",
+    "Description": "내 턴 시작 시, 힘을 2 얻습니다.",
+    "Cost": 3,
+    "CardType": "파워",
+    "EffectValueList": [
+      2
+    ],
+    "Grade": "희귀",
+    "UpgradedCost": 3,
+    "UpgradedEffectValueList": [
+      3
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_break_01",
+    "Name": "박살",
+    "Description": "피해를 20 줍니다. 취약을 5 부여합니다.",
+    "Cost": 1,
+    "CardType": "공격",
+    "EffectValueList": [
+      20,
+      5
+    ],
+    "Grade": "고대의존재",
+    "UpgradedCost": 1,
+    "UpgradedEffectValueList": [
+      30,
+      7
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_corruption_01",
+    "Name": "타락",
+    "Description": "스킬 카드의 비용이 0이 됩니다. 스킬 카드를 사용할 때마다 그 카드를 소멸 시킵니다.",
+    "Cost": 3,
+    "CardType": "파워",
+    "EffectValueList": [
+      0
+    ],
+    "Grade": "고대의존재",
+    "UpgradedCost": 2,
+    "UpgradedEffectValueList": [
+      0
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_demonicshield_01",
+    "Name": "악마의 방패",
+    "Description": "체력을 1 잃습니다. 다른 플레이어에게 자신의 방어도와 동일한 만큼의 방어도를 줍니다. 소멸.",
+    "Cost": 0,
+    "CardType": "스킬",
+    "EffectValueList": [
+      1
+    ],
+    "Grade": "멀티고급",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      1
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  },
+  {
+    "Id": "card_tank_01",
+    "Name": "탱커",
+    "Description": "적에게 받는 피해가 2배가 됩니다. 아군이 적에게 받는 피해가 절반이 됩니다.",
+    "Cost": 1,
+    "CardType": "스킬",
+    "EffectValueList": [
+      2,
+      50
+    ],
+    "Grade": "멀티희귀",
+    "UpgradedCost": 0,
+    "UpgradedEffectValueList": [
+      2,
+      50
+    ],
+    "TargetType": null,
+    "PrefabPath": null
+  }
+]
