@@ -34,6 +34,7 @@ public class Project_BattlePlayer : MonoBehaviour
     private int _currentHp;
     private int _maxHp;
     private int _currentMana;
+    private int _maxMana;
 
     private int _instanceId;
 
@@ -47,6 +48,18 @@ public class Project_BattlePlayer : MonoBehaviour
     {
         get => _currentHp;
         private set => _currentHp = value;
+    }
+
+    public int CurrentMana
+    {
+        get => _currentMana;
+        private set => _currentMana = value;
+    }
+
+    public int MaxMana
+    {
+        get => _maxMana;
+        private set => _maxMana = value;
     }
 
     public int InstanceId
@@ -67,9 +80,31 @@ public class Project_BattlePlayer : MonoBehaviour
 
         _maxHp = maxHp;
         CurrentHp = maxHp;
-        _currentMana = 3;
+        MaxMana = 3;
+        _currentMana = MaxMana;
 
         _activeEffects.Clear();
+
+        RefreshPlayerUI();
+    }
+
+    public bool CheckCanUseEnergy(int requiredEnergy)
+    {
+        return CurrentMana >= requiredEnergy;
+    }
+
+    public void ConsumeEnergy(int amount)
+    {
+        CurrentMana -= amount;
+        if (CurrentMana < 0) CurrentMana = 0;
+
+        RefreshPlayerUI();
+    }
+
+    public void ResetEnergyOnTurnStart()
+    {
+        // to do:기획에 따라 최대 마나만큼 고정 회복하거나, 특정 버프에 의해 추가 마나를 얻도록 확장 가능
+        CurrentMana = MaxMana;
 
         RefreshPlayerUI();
     }

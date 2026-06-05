@@ -55,17 +55,16 @@ public class DaniTechTurnManager : MonoBehaviour
     {
         Debug.Log($"<color=green>[턴 {_turnCount}] 플레이어 턴 시작</color>");
 
-        // 1. 오브젝트 매니저를 통해 플레이어 컴포넌트를 가져와 턴 시작 상태 연산 (버프/디버프 등)
         var player = DaniTechGameObjectManager.Inst.BattlePlayerTarget;
         if (player != null)
         {
+            player.ResetEnergyOnTurnStart();
+
             player.ProcessTurnStartEffects();
         }
 
-        // 2. 카드 드로우 로직 연동 (예시: 턴 시작 시 5장 드로우)
-        // CardManager.Inst.DrawCards(5);
+        ProjectCardManager.Inst.DrawCards(5);
 
-        // 3. 셋업이 끝나면 유저가 카드를 낼 수 있는 '행동 단계'로 진입
         EnterPlayerActionPhase();
     }
 

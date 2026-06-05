@@ -22,8 +22,7 @@ public class ProjectBattleManager : MonoBehaviour
             Player_Main.InitBattlePlayer("CH_001", 100);
         }
 
-        // 2. 적 스폰 요청 (기존에 만들어두신 몬스터 생성 로직 호출)
-        // 이 함수가 실행되면서 내부적으로 고유 ID(2, 3, 4...)가 발급되며 몬스터가 셋업됩니다.
+        // 2. 적 스폰 요청
         DaniTechGameObjectManager.Inst.RequestSpawnEnemy();
     }
 
