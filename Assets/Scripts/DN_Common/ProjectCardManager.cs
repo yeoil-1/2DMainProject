@@ -1,6 +1,50 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
+public interface IProjectCardEffect
+{
+    void Apply(int targetInstanceId, List<int> activeValues);
+}
+
+public enum DaniTechCardEffectType
+{
+    SingleDamage, 
+    GiveShield,    
+    AreaDamage,   
+    DrawCard,       
+    SelfDamage       
+}
+
+public class Effect_SingleDamage : IProjectCardEffect
+{
+    public void Apply(int targetInstanceId, List<int> activeValues)
+    {
+        GameObject targetObj = DaniTechGameObjectManager.Inst.GetEntityObjectCanBeNull(targetInstanceId);
+        if (targetObj == null) return;
+
+        var enemy = targetObj.GetComponent<Project_2DEnemy>();
+        if (enemy == null) return;
+
+        // 엑셀에서 넘겨받은 첫 번째 수치([0])를 대미지로 사용
+        int finalDamage = DaniTechGameUtil.CalcCharacterFinalDamage(1, activeValues[0], false);
+        enemy.TakeDamage(finalDamage);
+    }
+}
+
+public class Effect_GiveShield : IProjectCardEffect
+{
+    public void Apply(int targetInstanceId, List<int> activeValues)
+    {
+        var player = DaniTechGameObjectManager.Inst.BattlePlayerTarget;
+        if (player != null)
+        {
+            // 엑셀에서 넘겨받은 첫 번째 수치([0])를 방어도로 사용
+            player.AddStatusEffect(ProjectStatusEffectType.ShieldBuff, activeValues[0]);
+        }
+    }
+}
+
+
 public class ProjectCardManager : MonoBehaviour
 {
     public static ProjectCardManager Inst { get; set; }
