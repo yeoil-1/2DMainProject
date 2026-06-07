@@ -42,6 +42,7 @@ public class Project_CardVisual : MonoBehaviour
 
     public void OnClick_UseCardRequest()
     {
+        if (_cardStaticData == null) return;
         Debug.Log($"[{_cardStaticData.Name}] 카드 클릭됨! 비용: {_cardStaticData.Cost}, 타겟: {_cardStaticData.TargetType}");
 
         // TODO: 에너지 확인

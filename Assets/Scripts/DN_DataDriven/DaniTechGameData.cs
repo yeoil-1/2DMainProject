@@ -106,6 +106,7 @@ public class ProjectCardData: GameDataBase
     public List<int> UpgradedEffectValueList;
     public string TargetType;
     public string PrefabPath;
+    public string EffectType;
 }
 
 [System.Serializable]
